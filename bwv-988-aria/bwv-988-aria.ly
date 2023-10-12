@@ -1,272 +1,470 @@
-\version "2.16.1"
+\version "2.24.2"
 
-% Uncomment paper block below for fewer pages.
-%\paper {
-%       obsolete-between-system-padding = #0.1  system-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)  score-system-spacing #'padding = #(/ obsolete-between-system-padding staff-space)
-%       obsolete-between-system-space = #0.1  system-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)  score-system-spacing #'basic-distance = #(/ obsolete-between-system-space staff-space)
-%       ragged-last-bottom = ##f
-%       ragged-bottom = ##f
-%}
+#(set-default-paper-size "a4")
 
-%Uncomment paper block below for evenly-filled pages.
-%\paper {
-%    obsolete-page-top-space = #0.0  top-system-spacing #'basic-distance = #(/ obsolete-page-top-space staff-space)
-%    %indent = 0.0
-%    line-width = 18.0\cm
-%    ragged-bottom = ##f
-%    ragged-last-bottom = ##f
-%}
-
-%#(set-default-paper-size "a4")
-%#(set-default-paper-size "letter")
-
-#(set-global-staff-size 19)
-
-\header {
-        title = "Aria con 30 Variazioni"
-        subtitle = "\"Goldbergsche Variationen\""
-        piece = "Aria"
-        mutopiatitle = "Goldberg Variations - Aria"
-        composer = "Johann Sebastian Bach (1685-1750)"
-        mutopiacomposer = "BachJS"
-        opus = "BWV 988"
-        date = "1741"
-        mutopiainstrument = "Harpsichord,Clavichord"
-        style = "Baroque"
-        source = "Bach-Gesellschaft"
-        copyright = "Creative Commons Attribution-ShareAlike 3.0"
-        maintainer = "JD Erickson"
-        maintainerEmail = "erickson.jd@gmail.com"
-
- footer = "Mutopia-2013/01/22-979"
- tagline = \markup { \override #'(box-padding . 1.0) \override #'(baseline-skip . 2.7) \box \center-column { \small \line { Sheet music from \with-url #"http://www.MutopiaProject.org" \line { \concat { \teeny www. \normalsize MutopiaProject \teeny .org } \hspace #0.5 } • \hspace #0.5 \italic Free to download, with the \italic freedom to distribute, modify and perform. } \line { \small \line { Typeset using \with-url #"http://www.LilyPond.org" \line { \concat { \teeny www. \normalsize LilyPond \teeny .org }} by \concat { \maintainer . } \hspace #0.5 Copyright © 2013. \hspace #0.5 Reference: \footer } } \line { \teeny \line { Licensed under the Creative Commons Attribution-ShareAlike 3.0 (Unported) License, for details \concat { see: \hspace #0.3 \with-url #"http://creativecommons.org/licenses/by-sa/3.0" http://creativecommons.org/licenses/by-sa/3.0 } } } } }
+\paper {
+    ragged-bottom = ##t
+    print-page-number = ##f
+    print-all-headers = ##t
+    tagline = ##f
+    indent = #0
+    page-breaking = #ly:optimal-breaking
 }
 
-% Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pointAndClickOff
 
-staffUpper = {\change Staff = upper \stemDown}
-staffLower = {\change Staff = lower \stemUp}
-startRepeat = {\set Score.repeatCommands = #'(start-repeat)}
-endRepeat = {\set Score.repeatCommands = #'(end-repeat)}
+violin = \relative c'' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%
-%% Treble Clef
-%%
-
-soprano = \relative c'' {
-    \override Staff.NoteCollision #'merge-differently-dotted = ##t
-    \override Script #'padding = #1.0
-    \repeat volta 2 { %begin repeated section
-        %1-5
-        \stemDown g'4 g4( a8.\prallmordent) b16
+    \repeat volta 2 {
+        %1
+        g'4-. g( a8.\mordent) b16
         a8 \appoggiatura g16 fis8 \appoggiatura e16 d2
-        \stemUp g,4\prallmordent g4.\downprall fis16 g16
-        a32[( g32 fis16) g32( fis32 e16)] \appoggiatura e8 d2
-        \stemDown d'4 d4( e8.\prallmordent) f16
+        g,4-. \mordent g4.\downprall fis16 g
+        a32[( g fis16) g32( fis e16)] \appoggiatura e8 d2
 
-        %6-10
-        e8 \appoggiatura d16 c8 \appoggiatura b16 \stemUp a4. \stemDown fis'8\turn
-        \stemDown g32[( fis16.) a32( g16.)] fis32[( e16.) d32( c16.)] \once \override Slur #'direction = #UP \appoggiatura c8 a'8. c,16
-        \stemUp b32[( g16.) fis8] \appoggiatura fis8 g2\prallmordent
-        b4 b4( cis8.\prallmordent) d16
-        d16 cis16 b16 a16_~ \stemDown a2 \stemUp
+        %5
+        d'4-. d( e8. \mordent) f16
+        e8 \appoggiatura d16 c8 \appoggiatura b16 a4. fis'8\turn
+        g32[( fis16.) a32( g16.)] fis32[( e16.) d32( c16.)] \appoggiatura c8 a'8. c,16
+        b32[( g16.) fis8] \appoggiatura fis8 g2 \mordent
 
-        %11-15
-        <g b e g>4\arpeggio \stemDown g'4.\downprall fis16 g16
-        \override NoteColumn #'ignore-collision = ##t
-        g8 \appoggiatura fis16 e8 \once \override Stem #'length-fraction = #(magstep -6) cis4.\downprall e8
-        a16( g16 fis16 e16) d8 \stemUp a4_~ a32 b32 c16
-        b16( a16 g16 fis16) e8 \appoggiatura d'16 cis4_~ cis32 d32 e16
-        d16^( cis16 b16 a16) g'8 b,4 cis8
+        %9
+        b4-. b4( cis8. \mordent) d16
+        d cis b a d2 \stemUp
+        <g,, e' b' g'>4\arpeggio g''4.\downprall fis16 g16
+        g8 \appoggiatura fis16 e8 cis4.\downprall e8
 
-        %16-20
-        \appoggiatura cis16 d8^~[ d32 e32 d32 cis32] \appoggiatura cis8 d2 
-    } %end of repeated section
-    \repeat volta 2 { %begin repeated section
-        a4\prallmordent a4_~\downprall a16[ a32( b32 c32 d32 e16)]
+        %13
+        a16( g fis e) d8-. a4 ~ a32 b32 c16
+        b( a g fis) e8-. \appoggiatura d'16 cis4 ~ cis32 d e16
+        d ( cis b a) g'8 b,4 cis8
+        \appoggiatura cis16 d8 ~[ d32 e32 d32 cis32] \appoggiatura cis8 d2 
+    }
+
+    \repeat volta 2 {
+        % https://music.stackexchange.com/a/128794
+        % workaround for issue 34 https://sourceforge.net/p/testlilyissues/issues/34/
+        \grace {s8}
+
+        %17
+        a4 \mordent a4  ~\downprall a16[ a32( b32 c32 d32 e16)]
         \appoggiatura e16 d8 \appoggiatura c16 b8 \appoggiatura a8 g4. g'8
-        \appoggiatura fis16 e8. fis32 dis32 \appoggiatura dis8 e4.\prallmordent a32 b32 a32 g32
+        \appoggiatura fis16 e8. fis32 dis32 \appoggiatura dis8 e4. \mordent a32 b32 a32 g32
         a8. fis16 \appoggiatura e8 dis4. b8
 
-        %21-25
-        \stemDown g'8. \prallup fis16 \appoggiatura fis8 e4^~ e16[ b16 c32( b32 a32 b32)]
-        g'32[( e16.) fis32( dis16.)] \appoggiatura dis8 e4^~ \stemUp e16 g,16 fis16 e16
-        fis8. e'16 \appoggiatura e16 dis8 a'8 \prallup g8 fis8
+        %21
+        g'8. \prallup fis16 \appoggiatura fis8 e4 ~ e16[ b16 c32( b32 a32 b32)]
+        g'32[( e16.) fis32( dis16.)] \appoggiatura dis8 e4 ~ e16 g,16 fis16 e16
+        fis8. e'16 \appoggiatura e16 dis8-. a'8 \prallup g8 fis8
         \appoggiatura fis16 e8. fis32 dis32 \appoggiatura dis8 e2
-        \stemDown e8 \appoggiatura d16 c8 \appoggiatura b16 a4. b16[ c16]
 
-        %26-30
-        d32[( c32 b16) c32( b32 a16)] \appoggiatura a8 \stemUp g4. a16 b16
-        c16 d16 c16 b16 c16 a16 e16 a16 c4^~
+        %25
+        e8 \appoggiatura d16 c8 \appoggiatura b16 a4. b16[ c16]
+        d32[( c32 b16) c32( b32 a16)] \appoggiatura a8 g4. a16 b16
+        c16 d16 c16 b16 c16 a16 e16 a16 c4 ~
         c16 d16 c16 b16 c16 a16 fis16 a16 c16 e16 d16 c16
+
+        %29
         b16 c16 b16 a16 b16 g16 d16 g16 b16 g16 c16 d16
         e16 f16 e16 d16 e16 c16 g16 c16 e16 c16 fis16 g16
-
-        %31-32
         a16 c,16 b16 a16 b16 c16 d16 g,16 b16 a16 g16 fis16
-        g4^~ g16 d16 g16 fis16 \appoggiatura fis8 g4\fermata
-
-    } %end repeated section
+        g4 ~ g16 d16 g16 fis16 \appoggiatura fis8 g4\fermata
+    }
 }
 
-%%
-%% Bass Clef
-%% 
+violinExtended = \relative c'' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
 
-bassOne = \relative c' {
-    %1-5
-    \stemDown g2.
-    fis2.
-    e2.
-    d2_~ d8 c8
-    b2.
+    \repeat volta 2 {
+        %1
+        g'4 g4( \appoggiatura a16 \appoggiatura g a8.) b16
+        a8 g16 fis e16 d4..
+        \appoggiatura g,16 \appoggiatura fis g4 \appoggiatura a16 \appoggiatura g \appoggiatura fis \appoggiatura g \appoggiatura a g4.\trill fis16 g16
+        a32[( g fis16) g32( fis e16)] e8 d4.
 
-    %6-10
-    c2_~ c8 d8
-    e8 c8 d2
-    g,4. d'8[ e8.\prallmordent fis16]
-    g2._~
-    g4 fis8\prallprall e8 fis8 b8
+        %5
+        d'4 d( \appoggiatura e16 \appoggiatura d e8.) f16
+        e8 d16 c b a( a4) \appoggiatura g'16 \appoggiatura fis \appoggiatura e fis8
+        g32[( fis16.) a32( g16.)] fis32[( e16.) d32( c16.)] \appoggiatura c8 a'8. c,16
+        b32[( g16.) fis8] \appoggiatura fis8 \appoggiatura g16 \appoggiatura fis g2
 
-    %11-15
-    e,4. e8 fis8 g8
-    a4. b8 a8 g8
-    fis2.
-    g2.
-    a2.
+        %9
+        b4 b( \appoggiatura cis16 \appoggiatura b cis8.) d16
+        d cis b a d2 \stemUp
+        <g,, e' b' g'>4\arpeggio \appoggiatura a''16 \appoggiatura g \appoggiatura fis \appoggiatura g \appoggiatura a g4.\trill fis16 g16
+        g8 fis16 e \appoggiatura d16 cis4.\trill e8
 
-    %16-20
-    d,2. 
-    d'2 c4
-    b4. a8 b4
-    c4. b8 a4
-    b4. a8 g8 fis8
+        %13
+        a16( g fis e) d8 a4 ~ a32 b32 c16
+        b( a g fis) e8 d'16 cis8. ~ cis32 d e16
+        d ( cis16 b a) g'8 b,4 cis8
+        \appoggiatura cis16 d8 ~[ d32 e d cis] cis8 d( d4) 
+    }
 
-    %21-25
-    e2 d4
-    c2 b4
-    a8 c8 b8 a8 b4
-    e8 b8 e,8 b'8 e8 d8
-    c2.
+    \repeat volta 2 {
+        %17
+        \appoggiatura a16 \appoggiatura g a4 \appoggiatura b16 \appoggiatura a \appoggiatura g \appoggiatura a \appoggiatura b a4 ~\trill a16[ a32( b32 c32 d32 e16)]
+        e16 d c b a8 g4 g'8
+        fis16 e8 fis32 dis \appoggiatura dis8 \appoggiatura e16 \appoggiatura d e4. a32 b a g
+        a8. fis16 e8 dis4 b8
 
-    %26-30
-    b2.
-    a4. g8 fis8 e8
-    \stemUp d8 a'8 d8 c8 b8 a8
-    \stemDown g8 d'8 g8 f8 e8 d8
-    c8 g'8 c8 b8 a8 g8
+        %21
+        \appoggiatura e16 \appoggiatura fis g8. fis16 fis8 e8 ~ e16[ b16 c32( b32 a32 b32)]
+        g'32[( e16.) fis32( dis16.)] dis8 e ~ e16 g, fis e
+        fis8. e'16 e dis \appoggiatura fis \appoggiatura g a8 g fis
+        fis16 e8 fis32 dis dis8 e4.
 
-    %31-32
-    fis8 d8 g8 b8 d8 d,8
-    g4. d8 \stemUp \once \override Script #'padding = #.8 g,4_\fermata
+        %25
+        e8 d16 c b16 a( a4) b16[ c16]
+        d32[( c32 b16) c32( b a16)] a8 g4 a16 b
+        c d c b c a e a c4 ~
+        c16 d c b c a fis a c e d c
+
+        %29
+        b c b a b g d g b g c d
+        e f e d e c g c e c fis g
+        a c, b a b c d g, b a g fis
+        g4 ~ g16 d g fis fis8 g\fermata
+    }
 }
 
-bassTwo = \relative c' {
-    \override Script #'padding = #1.0
-    %1-5
-    \stemDown f4\rest b,2
-    f'4\rest a,2
-    f'4\rest g,2
-    f'4\rest \stemUp fis,2
-    f'4\rest d,2
+viola = \relative c' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
 
-    %6-10
-    s4 e4. s8
-    f'8\rest c8^~ c8[ b16 a16] g16 fis16 e16 fis16
-    g8 a8 b2
-    s4 b2
-    a4 \staffUpper \stemUp d'2 \staffLower
+    \repeat volta 2 {
+        %1
+        r4 b d
+        r a d
+        r g, cis
+        r fis, a
 
-    %11-15
-    f,8\rest b,8 e4. d8
-    cis8 d8 \staffUpper e2 \staffLower
-    f4\rest a,2
-    f'4\rest b,4 \staffUpper e4
-    fis4 e8. fis16 g4_~
+        %5
+        r d, g
+        r e d'
+        r8 c8 ~ c8[ b16 a16] g16 fis16 e16 fis16
+        g8 a b2
 
-    %16-20
-    g4 fis2 
-    \staffLower a8\rest e8 \once \override Stem #'length-fraction = #(magstep -2) fis2^\prallmordent
-    f8\rest c8 d2
-    f8\rest e8 g4 fis8^\prallprall e8
-    dis8 e8 \staffUpper fis2
+        %9
+        r4 b e
+        a, a'2
+        r8 b, e4. d8
+        cis d e2
 
-    %21-25
-    \staffLower f8\rest a,8 g8^\prallprall fis8 g4
-    f'8\rest a,8 g8^\prallprall fis8 g8 b8
-    \staffUpper fis'4. c'8 b8 a8_~
-    a4 g2
-    \staffLower s4 e,2
+        %13
+        r4 a, d
+        r b e
+        fis e8. fis16 g4 ~
+        g fis2 
+    }
+    \repeat volta 2 {
+        % https://music.stackexchange.com/a/128794
+        % workaround for issue 34 https://sourceforge.net/p/testlilyissues/issues/34/
+        \grace {s8}
 
-    %26-30
-    \skip 2.
-    \skip 4. \staffUpper e'8_~ e16 b'16 a16 g16
-    fis4 r8 fis4.
-    g8 r8 r8 d8. g8._~
-    g4 r8 g8. c8.
+        %17
+        r8 e fis2 \mordent
+        r8 c d2
+        r8 e g4 fis8 \prall e
+        dis e fis2
 
-    %31-32
-    \skip 2.
-    c,16\rest c16 b16 a16 b2 
-    
+        %21
+        r8 a, g \prall fis g4
+        r8 a g \prall fis g b
+        fis'4. c'8 b a ~
+        a4 g2
+
+        %25
+        r4 e, a ~
+        a8 fis \appoggiatura e16 d8[ e16 fis] g[ fis g8] ~
+        g[ e] a e' ~ e16 b' a g
+        fis4 r8 fis4.
+
+        %29
+        g8 r r d8. g ~
+        g4 r8 g8. c~
+        c4 r2
+        r16 c, b a b2 \fermata
+    }
 } 
 
-bassThree = \relative c' {
-    %1-5
-    \stemUp s4 f4\rest d4
-    s4 f4\rest d4
-    s4 f4\rest cis4
-    s4 f4\rest a,4
-    s4 f'4\rest g,4
+violaExtended = \relative c' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
 
-    %6-10
-    f'4\rest f4\rest a,4
-    \skip 2.
-    \skip 2.
-    f'4\rest f4\rest \staffUpper e4
-    \staffLower \skip 2.
-    
-    %11-15
-    \skip 2.
-    \skip 2.
-    f4\rest f4\rest d4
-    \skip 2.
-    \skip 2.
+    \repeat volta 2 {
+        %1
+        r4 b d
+        r a d
+        r g, cis
+        r fis, a
 
-    %16-20
-    f4\rest f8\rest a,8 d4
-    \skip 2.
-    \skip 2.
-    \skip 2.
-    \skip 2.
+        %5
+        r d, g
+        r e d'
+        r8 c ~ c[ b16 a] g fis e fis
+        g8 a b2
 
-    %21-25
-    \skip 2.
-    \skip 2.
-    r4 r4 r8 dis,8
-    e4 \skip 2
-    f'4\rest f4\rest a,4^~
+        %9
+        r4 b e
+        a, a'2
+        r8 b, e4. d8
+        cis d e2
 
-    %26-30
-    a8 fis8 \once \override Slur #'direction = #DOWN \appoggiatura e16 d8[ e16 fis16] g16[ fis16 g8]^~
-    g8[ e8] a8 a8\rest a4\rest
-    
+        %13
+        r4 a, d
+        r b e
+        fis e8. fis16 g4 ~
+        g fis2 
+    }
+    \repeat volta 2 {
+        %17
+        r8 e8 \appoggiatura fis16 \appoggiatura e fis2
+        r8 c8 d2
+        r8 e8 g4 \appoggiatura fis16 \appoggiatura g \appoggiatura fis \appoggiatura g fis8 e
+        dis e fis2
+
+        %21
+        r8 a, \appoggiatura g16 \appoggiatura a \appoggiatura g \appoggiatura a g8 fis8 g4
+        r8 a \appoggiatura g16 \appoggiatura a \appoggiatura g \appoggiatura a g8 fis g b
+        fis'4. c'8 b a ~
+        a4 g2
+
+        %25
+        r4 e, a ~
+        a8 fis e16[ d e fis] g[ fis g8] ~
+        g[ e] a e' ~ e16 b' a g
+        fis4 r8 fis4.
+
+        %29
+        g8 r r d8. g ~
+        g4 r8 g8. c~
+        c4 r2
+        r16 c, b a b2 \fermata
+    }
+} 
+
+cello = \relative c' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+
+    \repeat volta 2 {
+        %1
+        g2.
+        fis2.
+        e2.
+        d2 ~ d8 c
+
+        %5
+        b2.
+        c2 ~ c8 d
+        e c d2
+        g,4. d'8[ e8.\mordent fis16]
+
+        %9
+        g2. ~
+        g4 fis8 \prall e fis b
+        e,4. e8 fis g
+        a4. b8 a g
+
+        %13
+        fis2.
+        g
+        a
+        d,4. a'8 d,4
+    }
+    \repeat volta 2 {
+        % https://music.stackexchange.com/a/128794
+        % workaround for issue 34 https://sourceforge.net/p/testlilyissues/issues/34/
+        \grace {s8}
+
+        %17
+        d'2 c4
+        b4. a8 b4
+        c4. b8 a4
+        b4. a8 g fis
+
+        %21
+        e2 d4
+        c2 b4
+        a8 c b a b4
+        e8 b e, b' e d
+
+        %25
+        c2.
+        b2.
+        a4. g8 fis e
+        d a' d c b a
+
+        %29
+        g d' g f e d
+        c g' c b a g
+        fis d g b d d,
+        g4. d8 g,4 \fermata
+    }
 }
 
-%% Merge Bass
+celloExtended = \relative c' {
+    \accidentalStyle modern-voice-cautionary
+    \override Rest.staff-position = #0
+    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
 
-bass = << \bassOne \\ \bassTwo \\ \bassThree >>
+    \repeat volta 2 {
+        %1
+        g2.
+        fis2.
+        e2.
+        d2 ~ d8 c
 
-%% Merge score - Piano staff in key of G Major, 3/4 time.
+        %5
+        b2.
+        c2 ~ c8 d
+        e c d2
+        g,4. d'8[ \appoggiatura e16 \appoggiatura d e8. fis16]
 
-\score {
-    \context PianoStaff <<
-        \set PianoStaff.midiInstrument = "harpsichord"
-        \context Staff = "upper" { \clef treble \key g \major \time 3/4 << \soprano >>  }
-        \context Staff = "lower"  { \clef bass \key g \major \time 3/4 \bass }
-    >>
-    \layout{  }
-    \midi { }
+        %9
+        g2. ~
+        g4 \appoggiatura fis16 \appoggiatura g \appoggiatura fis \appoggiatura g fis8 e fis b
+        e,4. e8 fis g
+        a4. b8 a g
+
+        %13
+        fis2.
+        g2.
+        a2.
+        d,4. a'8 d,4
+    }
+    \repeat volta 2 {
+        %17
+        d'2 c4
+        b4. a8 b4
+        c4. b8 a4
+        b4. a8 g fis
+
+        %21
+        e2 d4
+        c2 b4
+        a8 c b a b4
+        e8 b e, b' e d
+
+        %25
+        c2.
+        b2.
+        a4. g8 fis e
+        d a' d c b a
+
+        %29
+        g d' g f e d
+        c g' c b a g
+        fis d g b d d,
+        g4. d8 g,4 \fermata
+    }
+}
+
+volume = \relative c {
+    \tempo "Andante espressivo"
+    \override DynamicTextSpanner.style = #'none
+    {
+        s4 \p s4-\markup { \italic \larger "dolce" } s4 |
+        s2. |
+        s2. |
+        s2. |
+        s2. |
+        s2. |
+        s8. \< s16 \! s8. \> s16 \! s4 |
+        s2. |
+        
+        s4 s4 s4 \cresc |
+        s2. |
+        s2. \f |
+        s4 s4 \> s4 |
+        s2. \mf \! |
+        s2. |
+        s8. \< s16 \! s8. s16 \> s8. s16 \! |
+        s2. \p |
+    }
+    \break
+    {
+        s2. |
+        s2 s4 \cresc |
+        s2. |
+        s4 s2 \> |
+        s2 \mf s8 s16 \< s16 |
+        s16 s16 \! s8 s4 s4 \> |
+        s4 \< s4 \f s4 |
+        s8 s8 \> s2 |
+
+        s2. \p |
+        s2. |
+        s4 s4-\markup { \italic \larger "cresc. poco" } s4 |
+        s2. |
+        s4 \mf s4 \cresc s4 |
+        s2. |
+        s4 \f s4 \dim s4 |
+        s2. \p |
+    }
+}
+
+\book {
+    \score {
+        \header {
+            title = "Aria with 30 Variations"
+            subtitle = "Goldberg Variations"
+            piece = \markup { \fontsize #3 \bold "Aria" }
+            composer = "J.S. Bach"
+            opus = "BWV 988"
+        }
+        \context StaffGroup <<
+            \context Staff = "upper" { \clef treble \key g \major \time 3/4 << \violin \\ \volume >> }
+            \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
+            \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
+        >>
+        \layout{ }
+        \midi { }
+    }
+}
+\book {
+    \score {
+        \header {
+            title = "Aria with 30 Variations"
+            subtitle = "Goldberg Variations"
+            piece = \markup { \fontsize #3 \bold "Aria" }
+            composer = "J.S. Bach"
+            opus = "BWV 988"
+        }
+        \context Staff = "upper1" { \clef treble \key g \major \time 3/4 << \violin \\ \volume >> }
+        \layout{ }
+    }
+    \pageBreak
+    \score {
+        \header {
+            title = "Aria with 30 Variations"
+            subtitle = "Goldberg Variations"
+            piece = \markup { \fontsize #3 \bold "Aria" }
+            composer = "J.S. Bach"
+            opus = "BWV 988"
+        }
+        \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
+        \layout{ }
+    }
+    \pageBreak
+    \score {
+        \header {
+            title = "Aria with 30 Variations"
+            subtitle = "Goldberg Variations"
+            piece = \markup { \fontsize #3 \bold "Aria" }
+            composer = "J.S. Bach"
+            opus = "BWV 988"
+        }
+        \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
+        \layout{ }
+    }
 }
