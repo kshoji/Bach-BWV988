@@ -37,7 +37,7 @@ violin = \relative b' {
 
         e8 [ d c ] ~ | % 13
         c8 b4 | % 14
-        a8 [ d cis  ~] | % 15
+        a8 [ d cis ~] | % 15
     }
 
     \alternative {
@@ -48,7 +48,7 @@ violin = \relative b' {
     \repeat volta 2 {
         r8 fis8 [ d ] | % 17
         g8 b4 ~ | % 18
-        b8  [ a16 g fis e ] | % 19
+        b8 [ a16 g fis e ] | % 19
         dis16 [ e ] fis4 ~ | % 20
 
         fis8 [ e8 g8 ] | % 21
@@ -116,11 +116,11 @@ viola = \relative d' {
         a8 [ fis a ~ ] | % 28
         a8 [ g b ] | % 29
         g8 a b | % 30
-        a8-. [ d  c ~ ] | % 31  
+        a8-. [ d c ~ ] | % 31
     }
     \alternative {
-        { c16 [ a b8-. ] r8 | }% 32 
-        { c16\repeatTie [ a b8-. ] r8 | }% 32 
+        { c16 [ a b8-. ] r8 | }% 32
+        { c16\repeatTie [ a b8-. ] r8 | }% 32
     }
     \bar "|."
 }
@@ -150,11 +150,11 @@ cello = \relative c' {
     }
     \alternative {
         { d,8. [ d'16 e fis ] | } % 16
-        { d,8. [ a''16  b cis ] | } % 16
+        { d,8. [ a''16 b cis ] | } % 16
     }
-  
+
     \repeat volta 2 {
-        d4 c!8 | % 17 
+        d4 c!8 | % 17
         b4 g8 | % 18
         c8 [ fis, a ] | % 19
         b8 [ dis, b ] | % 20
@@ -163,12 +163,12 @@ cello = \relative c' {
         a8 [ b b, ] | % 23
         e4 d8 | % 24
         c4. ~ | % 25
-        c8  b4 ~ | % 26
-        b8 [ a c ] | % 27 
+        c8 b4 ~ | % 26
+        b8 [ a c ] | % 27
         fis,8 [ d fis ] | % 28
         g8 [ b g ] | % 29
         c4. ~ | % 30
-        c8  [ b d ] | % 31
+        c8 [ b d ] | % 31
     }
     \alternative {
         { g,8. a'16 b cis | } % 32
@@ -254,7 +254,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef "treble" \key g \major \time 3/8 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -266,7 +266,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 3/8 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -278,6 +278,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef "bass" \key g \major \time 3/8 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }

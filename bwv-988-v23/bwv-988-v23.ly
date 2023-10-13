@@ -56,7 +56,7 @@ violin = \relative g' {
         r16 c16 r16 a16 r16 c16 r16 e16 r16 g,16 r16 b16 | % 29
         r16 d16 r16 b16 r16 d16 r16 fis!16 r16 a16 r16 c16 | % 30
         r16 cis16-. [ d-. e-. ] fis-. [ g-. a-. b-. ] c!8-. r8 | % 31
-        r16 b16-. [ a-. g-. ] fis-. [ e-. d-. c-. ] b8 r8  | % 32
+        r16 b16-. [ a-. g-. ] fis-. [ e-. d-. c-. ] b8 r8 | % 32
     }
 }
 
@@ -144,7 +144,7 @@ cello = \relative g' {
         r8 r16 a,16( g8-.) [ c8( ] a8 [ b8 ] | % 23
         e,8) r r4 r | % 24
 
-        r4 r16 b''16-. \> [ a-.  g-. ] fis!-. [ e-.  d-.  c-. \! ] | % 25
+        r4 r16 b''16-. \> [ a-. g-. ] fis!-. [ e-. d-. c-. \! ] | % 25
         b8 r8 r16 a16-. [ \< b-. c-. ] d-. [ e-. fis-. g-. \! ] | % 26
         a8 [ a a a fis fis ] | % 27
         d8 [ d d d b b ] | % 28

@@ -31,7 +31,7 @@ violin = \relative b' {
         b32( [ a g16) a8 ~ ] a32 [ g a b c fis, g a ] d, [ fis e d a' g fis c' ] | % 7
         c32( [ b a16) b8 ~ ] b32 [ a g fis g b d fis ] g [ fis32 e d fis a b c ] | % 8
         b32 [ a g16 ~] g32 [ fis e16 ~] e32 [ dis e16 ~ ] e32 [fis g16 ~ ] g32 [ a b16 ~ ] b32 [ g fis e ] | % 9
-	    a32 [ g fis16 ~ ] fis32 [ e d16 ~ ] d32 [ cis d16 ~] d32 [ e fis16 ~ ] fis32 [ g a16 ~ ] a32 [ fis e d ] | % 10
+        a32 [ g fis16 ~ ] fis32 [ e d16 ~ ] d32 [ cis d16 ~] d32 [ e fis16 ~ ] fis32 [ g a16 ~ ] a32 [ fis e d ] | % 10
         g32 [( a b a ) g16-. fis-. ] e32 [( fis g fis ) e16-. d-. ] cis32 [ (d e d ) cis16-. b-. ] | % 11
         a4. ~ \downprall a32 [ cis b a ] b [ (cis d e fis16-. g-.) ] | % 12
         a32-! [ d, (cis d e d cis d ) ] a [ d g, d' fis, d' e, d' ] fis, [ d' a d fis, d' d, c' ] | % 13
@@ -41,22 +41,22 @@ violin = \relative b' {
     }
 
     \repeat volta 2 {
-        fis'32 [ g fis e fis8 ~ ] fis32 [ e( fis g a16-. b-.) ] \appoggiatura  c32 b16 [ a g fis ] | % 17
-        g32 [ a g fis g8 ~ ] g32 [ fis,( g a b16-. c-.) ] \appoggiatura  d32 c16 [ b a g ] | % 18
-        e'32 [ fis e dis e8 ~ ] e16( [ gis) gis( a) ] a( [ b) b( c) ]  | % 19
+        fis'32 [ g fis e fis8 ~ ] fis32 [ e( fis g a16-. b-.) ] \appoggiatura c32 b16 [ a g fis ] | % 17
+        g32 [ a g fis g8 ~ ] g32 [ fis,( g a b16-. c-.) ] \appoggiatura d32 c16 [ b a g ] | % 18
+        e'32 [ fis e dis e8 ~ ] e16( [ gis) gis( a) ] a( [ b) b( c) ] | % 19
         e,32( [ dis cis16) dis8 \mordent ] dis8 ~ [ dis32 dis e fis ] e [ dis cis b a g a fis' ] | % 20
-        g,32-. [ e'(  dis e f e dis e )] fis [ e g e a e b' e, ] c' [ e, d' e, c' e, b' e, ] | % 21
+        g,32-. [ e'( dis e f e dis e )] fis [ e g e a e b' e, ] c' [ e, d' e, c' e, b' e, ] | % 21
         c'32-. [ e,( dis e f e dis e )] c' [ e, b' e, a e g e ] fis [ e g e a e dis! cis ] | % 22
         dis32-. [ a' ( g a b a g a )] b,-. [ g' ( fis g a g fis g ) ] a,-. [ fis'( e fis g a g fis ) ] | % 23
-        <<{ g16 [( dis ) dis  (e ) ] e [( a,) a ( g ) ] g8 ~ \mordent [ g32 b c d ]| }\\{s4 r8 dis, e r8 |}>>  % 24
-        e'32 [ f e dis e8 ~ ] e16 [ a,( \appoggiatura b32 a16)( g) ] \appoggiatura  a32 g16( [ fis!) fis( e') ] | % 25
-        d32 [ e d cis d8 ~ ] d16 [ g,( \appoggiatura a32 g16)( f) ] \appoggiatura  g32 f16( [ e) e( d') ] | % 26
+        <<{ g16 [( dis ) dis (e ) ] e [( a,) a ( g ) ] g8 ~ \mordent [ g32 b c d ]| }\\{s4 r8 dis, e r8 |}>> % 24
+        e'32 [ f e dis e8 ~ ] e16 [ a,( \appoggiatura b32 a16)( g) ] \appoggiatura a32 g16( [ fis!) fis( e') ] | % 25
+        d32 [ e d cis d8 ~ ] d16 [ g,( \appoggiatura a32 g16)( f) ] \appoggiatura g32 f16( [ e) e( d') ] | % 26
         c32 [ b a16 ~ a32 g fis16 ~ ] fis32 [ e d16 ~ d32 e fis16 ~ ] fis32 [ g a16 ~ a32 b c16 ~] | % 27
         c32 [ d c b c g' fis e ] fis [ b a g a d c b ] c [ b a g fis e d c ] | % 28
         b32-. [ g' ( fis g a g fis g ) ] c,-. [ fis ( e fis g fis e fis ) ] d-. [ f (e f g f e d ) ] | % 29
         e32-. [ c ( b c d c b c ) ] d-. [ b ( a b c b a b ) ] cis-. [ bes ( a bes c bes a g ) ] | % 30
         fis32-. [ c' ( b c d c b c )] fis-. [ c ( b c d c b c ) ] a'-. [ c, ( b c d c b a ) ] | % 31
-        b16 [ ( fis ) fis (g) ] g [ (c,) c (b) ] b4  | % 32
+        b16 [ ( fis ) fis (g) ] g [ (c,) c (b) ] b4 | % 32
     }
 }
 
@@ -78,7 +78,7 @@ viola = \relative b {
         r8 r16 d16 g4 r4 | % 8
         r8 b8 e2 ~| % 9
         e8 [ a, ] d2 ~ | % 10
-        d8  [ b ] g2 ~ | % 11
+        d8 [ b ] g2 ~ | % 11
         g16 [ a g fis ] g8 r8 r4 | % 12
         r8 a8 d4. a8 | % 13
         g8 [ b ] e4. b8 | % 14
@@ -94,7 +94,7 @@ viola = \relative b {
         r8 b,4 a4 gis8 | % 21
         r8 c4 e8 [ c a ] | % 22
         r8 fis g e'4 dis8 | % 23
-        e8 [ fis,  g  c ] b r8 | % 24
+        e8 [ fis, g c ] b r8 | % 24
         r8 r16 g16 c [ d e8 ] d8 [ cis ] | % 25
         b8. [ fis16 ] b [ c d8 ] c [ b ] | % 26
         a8 [ e ] a [ c a fis ] | % 27
@@ -115,15 +115,15 @@ cello = \relative g {
 
     \repeat volta 2 {
         g4. g8 [ fis e ] | % 1
-        fis4. b8 [a  b ] | % 2
-        e,4. a8 [ g  a ] | % 3
-        d,4. e8 [ d  c ] | % 4
-        b4. g8 [a  b ] | % 5
-        c4. a8 [ b  c ] | % 6
-        d4. d8 [ c  d ] | % 7
-        g,4. g8 [ b  d ] | % 8
+        fis4. b8 [a b ] | % 2
+        e,4. a8 [ g a ] | % 3
+        d,4. e8 [ d c ] | % 4
+        b4. g8 [a b ] | % 5
+        c4. a8 [ b c ] | % 6
+        d4. d8 [ c d ] | % 7
+        g,4. g8 [ b d ] | % 8
         g4. g8 [ fis e ] | % 9
-        fis4. b8 [ a  b ] | % 10
+        fis4. b8 [ a b ] | % 10
         e,4. fis8 [ e d ] | % 11
         cis4. e8 [ a, g ] | % 12
         fis8 [ fis'16. e32 ] fis8 [ a d, fis ] | % 13
@@ -133,21 +133,21 @@ cello = \relative g {
     }
 
     \repeat volta 2 {
-        d'4. c16 [ b  c8  a ] | % 17
+        d'4. c16 [ b c8 a ] | % 17
         b4. d8 [ g, b ] | % 18
         c4. b8 [ c a ] | % 19
         b4. b,8 [ cis dis ] | % 20
         e,8 [ g'16 a ] g8 [ fis ] e4 | % 21
         a,8 [ a'16 g ] a8 [ c a fis ] | % 22
-        b,8 [ dis  e  g ] b4 | % 23
+        b,8 [ dis e g ] b4 | % 23
         e,2 ~ e8 [ d ] | % 24
         c4 r8 c'8 [ b ais ] | % 25
-         b8 [ b,] r8 b' [ a  gis ] | % 26
+         b8 [ b,] r8 b' [ a gis ] | % 26
         a8 [ a, ] r4 r4 | % 27
-        r8 a8 [ d, fis  a  d ] | % 28
+        r8 a8 [ d, fis a d ] | % 28
         g,8 [ g' a b ] r8 g8 | % 29
-        c,8 [ e  f  fis ] g [ fis16 e ] | % 30
-        d4. fis8 [ e  d ] | % 31
+        c,8 [ e f fis ] g [ fis16 e ] | % 30
+        d4. fis8 [ e d ] | % 31
         <<{ s4 r8 es \shiftOnn d4 | } \\ { g,4 r g| }>> % 32
     }
 }
@@ -208,8 +208,8 @@ volume = \relative c {
         }
         \context StaffGroup <<
             \context Staff = "upper" { \clef "treble" \key g \major \time 3/4 << \violin \\ \volume >> }
-            \context Staff = "middle"  { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
-            \context Staff = "lower"  { \clef "bass" \key g \major \time 3/4 << \cello \\ \volume >> }
+            \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
+            \context Staff = "lower" { \clef "bass" \key g \major \time 3/4 << \cello \\ \volume >> }
         >>
         \layout { }
         \midi { }
@@ -236,7 +236,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "middle"  { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
+        \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
         \layout { }
     }
     \pageBreak
@@ -248,7 +248,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef "bass" \key g \major \time 3/4 << \cello \\ \volume >> }
+        \context Staff = "lower" { \clef "bass" \key g \major \time 3/4 << \cello \\ \volume >> }
         \layout { }
     }
 }

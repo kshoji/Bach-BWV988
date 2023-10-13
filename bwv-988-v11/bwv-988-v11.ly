@@ -83,7 +83,7 @@ viola = \relative g {
         a16 [ d fis! ] a [ d fis ] e [ cis a ] g [ fis e ] | % 15
         d2. | % 16
     }
-  
+
     \repeat volta 2 {
         r2.
         r2.
@@ -118,7 +118,7 @@ cello = \relative b {
         fis16 [ e d ] cis [ b a ] g [ fis e ] d [ e c! ] | % 4
         b'16 [ d g ] b [ d g ] d [ b g ] f [ e d ] | % 5
         cis16 [ e g ] bes [ e g ] e [ bes a ] g [ fis e ] | % 6
-        d16 [ g b ]  d [ g b ] a [ fis d ] c [ b a ] | % 7
+        d16 [ g b ] d [ g b ] a [ fis d ] c [ b a ] | % 7
         g8. r r4. | % 8
         r2.
         r2.
@@ -133,7 +133,7 @@ cello = \relative b {
     \repeat volta 2 {
         d16 [ e fis ] g [ a b ] c [ d, c' ( ] c ) [ b a ] | % 17
         g16 [ a b ] c [ d e ] f [ g, f' ~ ] f [ e d ] | % 18
-        c8. ~ c16 [ e g ] c [ b a ] g [ fis e ] | % 19 
+        c8. ~ c16 [ e g ] c [ b a ] g [ fis e ] | % 19
         dis16 [ cis b ] a [ g fis ] e [ dis cis ] b [ c a ] | % 20
         g8. ~ g16 [ b e ] g [ b dis ] e8 [ g,,16 ] | % 21
         a8. ~ a16 [ c f ] a [ c dis ] e8 [ ais,,16 ] | % 22
@@ -207,7 +207,7 @@ volume = \relative c {
         \context StaffGroup <<
             \context Staff = "upper" { \clef "treble" \key g \major \time 12/16 << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C \key g \major \time 12/16 << \viola \\ \volume >> }
-            \context Staff = "lower"  { \clef "bass" \key g \major \time 12/16 << \cello \\ \volume >> }
+            \context Staff = "lower" { \clef "bass" \key g \major \time 12/16 << \cello \\ \volume >> }
         >>
         \layout { }
         \midi { \tempo 4 = 93 }
@@ -246,7 +246,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef "bass" \key g \major \time 12/16 << \cello \\ \volume >> }
+        \context Staff = "lower" { \clef "bass" \key g \major \time 12/16 << \cello \\ \volume >> }
         \layout { }
     }
 }

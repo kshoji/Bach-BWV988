@@ -27,7 +27,7 @@ violin = \relative b' {
         b,4 g'8 g4 fis8 r8 r8 b8 a4 d,8 ~
         %5
         d16 [ e d c b8 ] e b d cis d e8 ~ e8 cis8 a
-        r8 r8  d8 g,4. ~ g8 [ fis g ] e a16 g fis e
+        r8 r8 d8 g,4. ~ g8 [ fis g ] e a16 g fis e
         d8 [ e16 fis g a ] b8 [ d cis ] d4. ~ d8 cis8 r8
         d4. ~ d16 [ a g fis g e] fis2.
     }
@@ -36,7 +36,7 @@ violin = \relative b' {
         %9
         r4. a'4.-> ~ a16 [ b c a b c ] b [ a g fis e dis ]
         e8 [ fis g ~ ] g [ fis e ] dis4. ~ dis4 r8
-        r4. a4.-> ~ a8 [ b16 a g  fis ] g16 [ a b g a  b ]
+        r4. a4.-> ~ a8 [ b16 a g fis ] g16 [ a b g a b ]
         e,8 [ fis16 g a b ] c8 [ e, dis ] e4. r4.
         %13
         e'4.-> ~ e16 [ fis g e fis g ] c,16 [ d e c d e ] a,16 [ b c a b c ]
@@ -55,12 +55,12 @@ viola = \relative b' {
     \repeat volta 2 {
         %1
         r1.
-        b,4. ~  b16 [ c d c d e] a,4. ~ a16 [ b c b c d ]
+        b,4. ~ b16 [ c d c d e] a,4. ~ a16 [ b c b c d ]
         g,4. g'-> ~ g8[ a16 g fis g ] a8 r8 r8
         r8 d,16 [ c b a ] b8 [ c16 b a b ] g8 [ e' d ] c8 [ fis a ]
         %5
         b,4 g'8 g4 fis8 r8 r8 b8 a4 d,8 ~
-        d16 [ e d c! b8 ]  e8 [ b d ] cis8 [ d e ~ ] e8 [ cis a ]
+        d16 [ e d c! b8 ] e8 [ b d ] cis8 [ d e ~ ] e8 [ cis a ]
         r8 r8 d8 g,4. ~ g8 [ fis g ] e8 [ a16 g fis e ]
         d8 [ e16 fis g a ] b8 [ d cis ] d2.
     }
@@ -90,7 +90,7 @@ cello = \relative c {
         g8 [ b d ] g8 [ b e, ] fis,8 [ a d] fis8 [ a d, ]
         e,8 [ g b ] e8 [ b cis ] d,8 [ fis a ] d8 [ fis a, ]
         b16 [ a b c d8 ] ~ ] d16 [ g,16 a b c d ] e16 [ d c b c e ] fis,16 [ a g fis e d ]
-        g16 [ fis g a b c ] d [e a, b c a ] b [ a g fis g8 ] ~ g16 [ fis e d e  fis ]
+        g16 [ fis g a b c ] d [e a, b c a ] b [ a g fis g8 ] ~ g16 [ fis e d e fis ]
         %5
         g16 [ fis g a g fis ] e16 [ fis g e fis g ] a16 [ g a b a g ] fis16 [ fis' g fis e fis ]
         b,16 [ a b c! d b ] cis16 [ d e d cis b ] a16 [ e' d cis d b ] cis16 [ a b cis d e ]
@@ -152,7 +152,7 @@ volume = \relative c {
         \context StaffGroup <<
             \context Staff = "upper" { \clef "treble" \key g \major \time 12/8 << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C \key g \major \time 12/8 << \viola \\ \volume >> }
-            \context Staff = "lower"  { \clef "bass" \key g \major \time 12/8 << \cello \\ \volume >> }
+            \context Staff = "lower" { \clef "bass" \key g \major \time 12/8 << \cello \\ \volume >> }
         >>
         \layout { }
         \midi { }
@@ -168,7 +168,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef "treble" \key g \major \time 12/8 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -180,7 +180,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 12/8 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -191,7 +191,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef "bass" \key g \major \time 12/8 << \cello \\ \volume >> }
-        \layout{ }
+        \context Staff = "lower" { \clef "bass" \key g \major \time 12/8 << \cello \\ \volume >> }
+        \layout { }
     }
 }

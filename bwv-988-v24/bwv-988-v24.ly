@@ -38,21 +38,21 @@ violin = \relative g' {
         a8 [ d cis ] d16 [ e fis8 e ] fis [ a16 g fis e ] | % 15
         fis8 [ g16 fis e d ] e8 [ fis16 e d cis ] d4. | %16
     }
-    
+
     \repeat volta 2 {
         R1*9/8 | % 17
         R1*9/8 | % 18
-        a'2.  ~  \downprall a4. ~ | % 19
-        a8  [ g fis ] g [ b a ] b4 dis,8 | % 20
+        a'2. ~ \downprall a4. ~ | % 19
+        a8 [ g fis ] g [ b a ] b4 dis,8 | % 20
         e8 [ g16 fis e d ] c8 [ e16 d c b ] a8 [ c16 b a g ] | % 21
-        fis4 e'8  dis  [e \turn  fis ] b,4. ~ | % 22
-        b8 [ dis e ] ~ e16 [ d c b c8 ] ~  c16 [ b a g a8 ~ ] | % 23
-        a8 [ fis g  ] b4. \mordent ~ b8  [ c d ] | % 24
-        e8 [ gis, b ] a4. ~  a8  [ b c ] | % 25
+        fis4 e'8 dis [e \turn fis ] b,4. ~ | % 22
+        b8 [ dis e ] ~ e16 [ d c b c8 ] ~ c16 [ b a g a8 ~ ] | % 23
+        a8 [ fis g ] b4. \mordent ~ b8 [ c d ] | % 24
+        e8 [ gis, b ] a4. ~ a8 [ b c ] | % 25
         d8 [ fis, a ] d,4 fis8 b4. ~ | % 26
         b4 dis,8 e [ fis g ] fis [ g a ] | % 27
         d,4. d4. d4. ~ | % 28
-        d8 [ g fis ] g [ a b ] c [ d16 c b a ] | % 29 
+        d8 [ g fis ] g [ a b ] c [ d16 c b a ] | % 29
         b8 [ c16 b a g ] a8 [ b16 a g fis ] g8 [ b16 a g fis ] | % 30
         g8 r8 r8 d8 r8 r8 fis8 r8 r8 | % 31
         g8 r8 r8 c,8 r8 r8 b4. | % 32
@@ -75,22 +75,22 @@ viola = \relative g {
         g8 ) [ fis e ] fis [ g a ] d,4. ~ | % 6
         d8 [ g fis ] g [ b a ] b [ d16 c b a ] | % 7
         b8 [ c16 b a g ] a8 [ b16 a g fis ] g8 [ a16 g fis e ] | % 8
-        d8 [ b' a ] g [ a fis ] e16 [ d cis8 d ] |  % 9
+        d8 [ b' a ] g [ a fis ] e16 [ d cis8 d ] | % 9
         \grace d8( cis4.) ( cis8 ) [ d e ] a, [ b cis ] | % 10
-        d4  fis8 g4 a8 b,4. ~ | % 11
+        d4 fis8 g4 a8 b,4. ~ | % 11
         b8 [ a gis ] a2. ~ | % 12
         a8 [ d cis ] d16 [ e fis8 e ] fis [ g16 fis e d ] | % 13
-        fis8 [ g16  fis  e  d ] e8 [ fis16  e  d  cis ] d8 [ e16 d cis b ] | % 14
+        fis8 [ g16 fis e d ] e8 [ fis16 e d cis ] d8 [ e16 d cis b ] | % 14
         a8 r8 r8 d8 r8 r8 cis8 r8 r8 | % 15
         d8 r8 r8 g8 r8 r8 fis4. | % 16
     }
-  
+
     \repeat volta 2 {
         a2. \downprall ~ a4. ~ | % 17
-        a8 [ g fis ] g [ b a ] b4  dis,8 | % 18
+        a8 [ g fis ] g [ b a ] b4 dis,8 | % 18
         e8 [ g16 fis e d ] c8 [ e16 d c b ] a8 [ c16 b a g ] | % 19
         fis4 e'8 dis [ e \turn fis ] b,4. ~ | % 20
-        b8 [ dis e ] ~  e16 [ d c b c8 ( ] c16 ) [ b a g a8 ~ ] | % 21
+        b8 [ dis e ] ~ e16 [ d c b c8 ( ] c16 ) [ b a g a8 ~ ] | % 21
         a8 [ fis g ] r4. r4. | % 22
         R1*9/8 | % 23
         R1*9/8 | % 24
@@ -112,7 +112,7 @@ cello = \relative g {
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
     \set Staff.midiInstrument = "cello"
 
-	\repeat volta 2 {
+    \repeat volta 2 {
         g4. r8 r8 fis8 g4 e8 | % 1
         fis4. r8 r8 a8 d,4 fis8 | % 2
         e2. ( e4 ) a8 | % 3
@@ -120,7 +120,7 @@ cello = \relative g {
         b4. r8 r8 d8 g,4 b8 | % 5
         e4 r8 r8 r8 a,8 b [ a b ] | % 6
         c8 [ b a ] b [ d c ] d4 d,8 | % 7
-        g4  g,8 g4 g'8 g [ fis16 e d c ] | % 8
+        g4 g,8 g4 g'8 g [ fis16 e d c ] | % 8
         b8 [ g a ] b [ c d ] g,4 g'8 ( | % 9
         g8 ) [ fis e ] a4 g8 fis [ g a ] | % 10
         b4. ~ b4 a8 g4 e8 | % 11
@@ -135,7 +135,7 @@ cello = \relative g {
         d8 [ fis a ] d [ e16 d c b ] c8 [ d16 c b a ] | % 17
         b4. ( b8 ) [ c d ] g, [ a b ] | % 18
         c8 r8 r8 a8 r8 r8 fis8 r8 r8 | % 19
-        dis4 fis8 b4. ~  b8 [ g a ] | % 20
+        dis4 fis8 b4. ~ b8 [ g a ] | % 20
         g8 r8 r8 e8 r8 r8 c8 r8 r8 | % 21
         a4 ais8 b [ c'16 b a g ] a8 [ b16 a g fis ] | % 22
         g8 [ a16 g fis e ] c'8 [ dis, e ] b [ e dis ] | % 23

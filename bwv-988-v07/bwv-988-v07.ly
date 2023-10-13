@@ -38,14 +38,14 @@ violin = \relative b' {
         \grace b8( cis8.) [ a16 a'8 ] d,8. [ e16 cis8 ] | % 15
         \grace cis( d4.) ~ d4. | % 16
     }
-  
+
     \repeat volta 2 {
         fis8. [ e16 fis8 ] a,8. [ d16 fis8 ] | % 17
         g8. [ fis16 g8 ] b4.-^ | % 18
         e,4 fis32 ( [ g a b ] c16-. ) [ b-. a-. g-. fis-. e-. ] | % 19
-        dis8. \prall [ cis16 dis8 ] b4. ~  | % 20
+        dis8. \prall [ cis16 dis8 ] b4. ~ | % 20
         b8. [ b'16 fis8 ] g8. [ dis16 e8 ] | % 21
-        c8. [ e16 gis8 ] a4 b32 ( [ a  g fis  ) ]  | % 22
+        c8. [ e16 gis8 ] a4 b32 ( [ a g fis ) ] | % 22
         g8. [ a16 b8 ] e,8. [ fis16 dis8 ] | % 23
         e8. [ b16 g8 ] e4 b'8 | % 24
         b8. [ gis16 a8 ] d8 [ e16 d c b ] | % 25
@@ -66,7 +66,7 @@ viola = \relative g {
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
     \set Staff.midiInstrument = "viola"
 
-	\repeat volta 2 {
+    \repeat volta 2 {
         g4 \mordent r8 g4. ( \mordent | % 1
         g4. ) fis8. \prall [ e16 d8 ] | % 2
         e4 d'8 cis4 a8 | % 3
@@ -84,7 +84,7 @@ viola = \relative g {
         a8. [ g16 fis8 ] b8. [ g16 a8 ] | % 15
         d,8. [ fis16 a8 ] d4. | % 16
     }
-  
+
     \repeat volta 2 {
         d4 d,8-. d'4 c8 | % 17
         b8. \prall [ a16 b8 ] g8. [ a16 b8 ] | % 18
@@ -130,7 +130,7 @@ cello = \relative g {
         a4. b4 a8 | % 15
         d,4.( d4.) | % 16
     }
-  
+
     \repeat volta 2 {
         d4. d4 c8 | % 17
         b4. g4 b8 | % 18
@@ -206,8 +206,8 @@ volume = \relative c {
         }
         \context StaffGroup <<
             \context Staff = "upper" { \clef treble \key g \major \time 6/8 << \violin \\ \volume >> }
-            \context Staff = "middle"  { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
-            \context Staff = "lower"  { \clef bass \key g \major \time 6/8 << \cello \\ \volume >> }
+            \context Staff = "middle" { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
+            \context Staff = "lower" { \clef bass \key g \major \time 6/8 << \cello \\ \volume >> }
         >>
         \layout { }
         \midi { }
@@ -223,7 +223,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef treble \key g \major \time 6/8 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -234,8 +234,8 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
-        \layout{ }
+        \context Staff = "lower" { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -246,7 +246,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef bass \key g \major \time 6/8 << \cello \\ \volume >> }
-        \layout{ }
+        \context Staff = "lower" { \clef bass \key g \major \time 6/8 << \cello \\ \volume >> }
+        \layout { }
     }
 }

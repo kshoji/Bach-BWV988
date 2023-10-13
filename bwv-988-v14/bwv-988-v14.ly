@@ -23,7 +23,7 @@ violin = \relative g, {
     \repeat volta 2 {
         r4 g'''4. ~ \upprall g16( [ fis32 g ] | % 1
         a8-.) r8 r4 r | % 2
-        r4 e8 ([ d8  ] cis8 [ d16 e ) ] | % 3
+        r4 e8 ([ d8 ] cis8 [ d16 e ) ] | % 3
         fis,8 r8 r4 r | % 4
         % b8 [ g b d g b, ] | % 5
         % c8 [ e g c e, g ] | % 6
@@ -45,10 +45,10 @@ violin = \relative g, {
 
     \repeat volta 2 {
         fis16 [ a d a ] fis [ a d, fis ] a [ fis g a ] | % 17
-        d,16 [ g b g ] d [ g  b, d ] g [ b, c d ] | % 18
+        d,16 [ g b g ] d [ g b, d ] g [ b, c d ] | % 18
         g,16 [ c e c ] a [ c fis, a ] c [ fis, g a] | % 19
         dis,16 [ fis b fis ] dis [ fis b, dis ] fis [ dis e fis ] | % 20
-        b,16 [ e g e ] b [ e g, b ] e [ dis e g ] | % 21   
+        b,16 [ e g e ] b [ e g, b ] e [ dis e g ] | % 21
         c,16 [ f a f ] c [ f a, c ] f [ e f a ] | % 22
         dis,8 r r4 r8 r8 | % 23
         r2. | % 24
@@ -56,10 +56,10 @@ violin = \relative g, {
         r2. | % 26
         r2 r8 r16 fis32( [e ] | % 27
         fis16-.) r16 r16 d'32( [ c d16-.) ] r16 r16 g32( [ fis g16-.) ] r16 r16 b32 [a ] | % 28
-        b8-! r8 d,,8-! r8 f8-! r8  | % 29
+        b8-! r8 d,,8-! r8 f8-! r8 | % 29
         r32 e32 [( f g c g f e ]) r32 fis32 [ g a c a g fis ] r32 g32 [ a bes cis bes a g ] | % 30
         d'16 [ c!32( b! c16-.) b32( a ] b16-.) [ bes32( a bes16-.) a32( g ] a16-.) [ d32( c d16-.) g,32( fis ] | % 31
-        g32 [ a b c  d c b a ] g16-.) [ b-. d,-. g-. ] g,8-! r8 | % 32
+        g32 [ a b c d c b a ] g16-.) [ b-. d,-. g-. ] g,8-! r8 | % 32
     }
 }
 
@@ -76,7 +76,7 @@ viola = \relative b {
         g16 [ e b e ] g [ e b' g ] e [ b' a g ] | % 3
         d'16 [ a fis a ] d [ a a' fis ] d [ fis e d] | % 4
         % g16 [ d b d ] g [ d b' g ] d [ f e d ] | % 5
-        % e16 [ c g c ] e [ c g' e ] c [ d c b ] | % 6    
+        % e16 [ c g c ] e [ c g' e ] c [ d c b ] | % 6
         g,8 r r4 r | % 5
         r2. | % 6
         a16 [ fis d fis ] a [ fis d' a ] fis [ a g fis ] | % 7
@@ -89,7 +89,7 @@ viola = \relative b {
         r4 d8-! r8 c8-! r8 | % 13
         r32 g32 [ (a b d b a g ]) r32 g32 [ a bes d bes a g ] r32 gis32 [ a b d b a gis ] | % 14
         % a16 [ cis32 b cis16 fis,32 e ] fis16 [ b32 a b16 e,32 d ] e16 [ a32 g a16 d,32 cis ] | % 15
-        % d32 [ e fis g  a g fis e ] d16 [ fis a, d ] d,8 r8 | % 16
+        % d32 [ e fis g a g fis e ] d16 [ fis a, d ] d,8 r8 | % 16
         a16 r8 d32 cis d16 r8 cis32 b cis16 r8 a32 g
         fis2~ fis8 r
     }
@@ -138,9 +138,9 @@ cello = \relative g, {
         d8-! ] r r4 r | % 13
         b''8-! r8 f8-! r8 e8-! r8 | % 14
         a16 [ cis32( b cis16-.) fis,32( e ] fis16-.) [ b32( a b16-.) e,32( d ] e16-.) [ a32( g a16-.) d,32( cis ] | % 15
-        d32 [ e fis g  a g fis e ] d16-.) [ fis-. a,-. d-. ] d,8-! r8 | % 16
+        d32 [ e fis g a g fis e ] d16-.) [ fis-. a,-. d-. ] d,8-! r8 | % 16
     }
-  
+
     \repeat volta 2 {
         d'8 r r4 r | % 17
         r2. | % 18

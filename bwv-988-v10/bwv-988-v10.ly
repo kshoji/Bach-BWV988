@@ -49,13 +49,13 @@ violin = \relative c''' {
         e2 dis | % 23
         e2 ~ e8 [ d cis b ] | % 24
         a4 g'2 f8 [ e ] | % 25
-        f2. e8 [ d ]|  % 26
+        f2. e8 [ d ]| % 26
         e2. fis!8 [ g ] | % 27
         a8 [ b g a ] fis4 a ~ | % 28
         a4 g8 [ fis ] g4 b, ~ | % 29
         b4 a8 [ b ] c2 ~ | % 30
         c4 b a fis | % 31
-        g8 d c d b2  % 32
+        g8 d c d b2 % 32
     }
 }
 
@@ -84,7 +84,7 @@ viola = \relative d' {
         e a a, g' | % 15
         fis4 \prall e8 [ fis ] d2 | % 16
     }
-  
+
     \repeat volta 2 {
         r1 | % 17
         r1 | % 18
@@ -101,7 +101,7 @@ viola = \relative d' {
         d2 \mordent d4. \prallprall c16 [ d ] | % 29
         <e>4 c a c | % 30
         a4 d d, c' | % 31
-        b4 \prall a8 [ b ] g2 | % 32 
+        b4 \prall a8 [ b ] g2 | % 32
     }
 }
 
@@ -114,7 +114,7 @@ cello = \relative c'' {
 
     \repeat volta 2 {
     \stemDown
-        g,2 \mordent g4. \prallprall \<  fis16[ g ] | % 1
+        g,2 \mordent g4. \prallprall \< fis16[ g ] | % 1
         a4 \> fis4 d fis \! | % 2
         e4 a a, g' | % 3
         fis4 \prall e8 [ fis ] d [ e c d ] | % 4
@@ -129,7 +129,7 @@ cello = \relative c'' {
         a8 [ b a g ] fis2 | % 13
         g4 b g e | % 14
         a2 r4 a,4 | % 15
-        d1 	| % 16
+        d1 | % 16
     }
 
     \repeat volta 2 {
@@ -225,7 +225,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef "treble" \key g \major \time 2/2 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -237,7 +237,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
             \context Staff = "middle" { \clef C \key g \major \time 2/2 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -249,6 +249,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef "bass" \key g \major \time 2/2 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }

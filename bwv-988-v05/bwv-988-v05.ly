@@ -107,8 +107,8 @@ viola = \relative g {
         d8-.) r8 b8-. r8 d4 | % 26
         c8-. b-. a-. g-. fis-. e-. | % 27
         fis8 [g16 a ] d,4 ~ d16 [c' b a ] | % 28
-        b16[ g fis g ] a [ g b g ] c [g d' g, ]  | % 29
-        e'8( [ g,-.) ] r8 b8-. [ a-.  g-. ] | % 30
+        b16[ g fis g ] a [ g b g ] c [g d' g, ] | % 29
+        e'8( [ g,-.) ] r8 b8-. [ a-. g-. ] | % 30
         fis16-.[ d' e fis ] g [ d b g ] a [ c g' fis ] | % 31
         g2. \fermata | % 32
     }
@@ -239,7 +239,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef "treble" \key g \major \time 3/4 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -251,7 +251,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -263,6 +263,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef "bass" \key g \major \time 3/4 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }

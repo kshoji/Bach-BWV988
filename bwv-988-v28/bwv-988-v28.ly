@@ -30,10 +30,10 @@ violin = \relative b'' {
         d16 r16 r8 e16 r16 r8 a,16 r16 r8 | % 7
         b16 r16 r8 c16 r16 r8 d16 r16 r8 | % 8
 
-        <g,, d' b' b'>16 [ g''16 fis g ] 
+        <g,, d' b' b'>16 [ g''16 fis g ]
         e [ b a b ] g [ b e g ] | % 9
         a16-> [ fis e fis ] d [ a g a ] fis [ a d fis ] | % 10
-        g16 [ e dis e ] 
+        g16 [ e dis e ]
         b-> [ g fis g ] e [ g b d ] | % 11
         cis16 [ g fis g ] e [ cis b cis ] a [ cis e g ] | % 12
         fis16 r16 r8 g16 r16 r8 a16 r16 r8 | % 13
@@ -50,17 +50,17 @@ violin = \relative b'' {
         b,16 r16 r8 cis16 r16 r8 dis16 r16 r8 | % 21
         e16 r16 r8 dis16 r16 r8 e16 r16 r8 | % 22
         cis16 r16 r8 b16 r16 r8 a16 r16 r8 | % 23
-        e'16-. [ g, fis g ] b [ e dis e ] g32 [  (f e16 ) f32 ( e d16 ) ] | % 24
+        e'16-. [ g, fis g ] b [ e dis e ] g32 [ (f e16 ) f32 ( e d16 ) ] | % 24
 
         e8-. [ e,8( ] dis8 [ d8 ] cis8-.) [ e'8-. ] | % 25
         d8-. [ d,8( ] cis8 [ c8 ] b8-.) [ d'8-. ] | % 26
-        e,16 r16 r8 d16 r16 r8 e16 r16 r8  | % 27
+        e,16 r16 r8 d16 r16 r8 e16 r16 r8 | % 27
         fis16 r16 r8 e16 r16 r8 fis16 r16 r8 | % 28
         b16 r16 r8 c16 r16 r8 d16 r16 r8 | % 29
         e,8-. [ e'8( ] f8 \< [ fis8 ] g8-. [ gis8 \! ] | % 30
-        a16-!) [ fis, e fis ] 
+        a16-!) [ fis, e fis ]
         g [ b a b ] c [ a fis d ] | % 31
-        g16 [ b a b ] 
+        g16 [ b a b ]
         d [ g fis g ] b4 | % 32
     }
 }
@@ -121,44 +121,44 @@ cello = \relative g {
     \set Staff.midiInstrument = "cello"
 
     \repeat volta 2 {
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 d32 [ e d e d e d ] | % 1
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 d32 [ e d e d e d ] | % 2
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 cis32 [ d cis d cis d cis ] | % 3
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ]  | % 4
-        r32 g,32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ] | % 4
+        r32 g,32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 g32 [ a g a g a g ] | % 5
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 g32 [ a g a g a g ] | % 6
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 fis32 [ g fis g fis g fis ] | % 7
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ]  | % 8
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ] | % 8
 
         g16 [ b a b ] e [ g fis g ] b [ g e cis ] | % 9
         fis,16-> [ a g a ] d [ fis e fis ] a [ fis d b ] | % 10
         e,16-> [ g fis g ] b [ e dis e ] g [ e b g ] | % 11
         a16 [ e' d e ] g [ a g a ] g [ e cis a ] \clef "bass" | % 12
 
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 d32 [ e d e d e d ] | % 13
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 d32 [ e d e d e d ] | % 14
-        r32 d32 [ e d e d e d ] 
-        r32 d32 [ e d e d e d ] 
+        r32 d32 [ e d e d e d ]
+        r32 d32 [ e d e d e d ]
         r32 cis32 [ d cis d cis d cis ] | % 15
         d,16 [ fis e fis ] a [ d cis d ] fis4 | % 16
     }
@@ -168,14 +168,14 @@ cello = \relative g {
         r2.
         r2.
         r2.
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 g32 [ a g a g a g ] | % 21
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 g32 [ a g a g a g ] | % 22
-        r32 g32 [ a g a g a g ] 
-        r32 g32 [ a g a g a g ] 
+        r32 g32 [ a g a g a g ]
+        r32 g32 [ a g a g a g ]
         r32 fis32 [ g fis g fis g fis ] | % 23
         r2.
 
@@ -194,11 +194,11 @@ cello = \relative g {
         r32 g32 [ a g a g a g ]
         r32 fis32 [ g fis g fis g fis ]
         r32 f32 [ g f g f g f ] | % 29
-        r32 c'32 [ d c d c d c ] 
-        r32 b32 [ c b c b c b ] 
+        r32 c'32 [ d c d c d c ]
+        r32 b32 [ c b c b c b ]
         r32 bes32 [ c bes c bes c bes ] | % 30
         fis16 [ d' c d ] b [ g fis g ] d [ fis a c ] | % 31
-        b16 [ g fis g ] 
+        b16 [ g fis g ]
         d [ b a b ] g4 | % 32
     }
 }

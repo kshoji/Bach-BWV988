@@ -35,8 +35,8 @@ violin = \relative d' {
         cis16 [ e a, b ] cis [ a e fis ] g [ e cis e ] | % 12
         d8-. [ fis-. a-. d-. ] r16 c16 [ a fis ] | % 13
         g8-. [ b-. d-. g-. ] r16 g16 [ fis g ] | % 14
-        a,8-. [ cis-. e-. g-. ] r16 g16 [ a cis, ] | % 15 
-        d16 [ fis a cis ] d [ cis32 b32 a32 g32 fis32 e32 ] d4  | % 16
+        a,8-. [ cis-. e-. g-. ] r16 g16 [ a cis, ] | % 15
+        d16 [ fis a cis ] d [ cis32 b32 a32 g32 fis32 e32 ] d4 | % 16
     }
 
     \repeat volta 2 {
@@ -80,7 +80,7 @@ viola = \relative d' {
         g,8 r r4 r | % 11
         e16 [ g cis b ] a [ cis e d ] cis [ e a g] | % 12
         fis16 [ a d, e ] fis [d a b ] c [ a fis a ] | % 13
-        b'16 [ d  g, a ] b [ g e fis ] g [ e b d] | % 14
+        b'16 [ d g, a ] b [ g e fis ] g [ e b d] | % 14
         r2. | % 15
         r2. | % 16
     }
@@ -223,7 +223,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef treble \key g \major \time 3/4 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -234,8 +234,8 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
-        \layout{ }
+        \context Staff = "lower" { \clef C \key g \major \time 6/8 << \viola \\ \volume >> }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -247,6 +247,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }

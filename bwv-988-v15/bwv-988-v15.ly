@@ -28,7 +28,7 @@ violin = \relative d'' {
         d8 [ es16 ( f ) ] es ( [ d ) d ( c ) ] | % 5
         bes8 r8 r8 c8 | % 6
         g'32 [ a fis16 g a ] bes [ c d c ] | % 7
-        bes16 [ \grace a16( g16) d8 ~ ] d8  [ es ] | % 8
+        bes16 [ \grace a16( g16) d8 ~ ] d8 [ es ] | % 8
         d8 r8 r16 es16 [ d ( c ) ] | % 9
         bes16 ( [ c ) c ( d ) ] d ( [ es ) es ( d ) ] | % 10
         d8 r8 r8 a'8 | % 11
@@ -36,13 +36,13 @@ violin = \relative d'' {
         a8 [ bes, ] c [ a' ] | % 13
         r8 g32 [ a g16 ~ ] g [ g8 g16 ~ ] | % 14
         g16 [ f32 g32 a16 bes ] a [ f cis8 ] | % 15
-        r8 g'8 ~ g16 [ fis32 e fis8 ] | % 16 
+        r8 g'8 ~ g16 [ fis32 e fis8 ] | % 16
     }
 
     \repeat volta 2 {
         r2 | % 17
-        r8 es8 [ d  c ] | % 18
-        g'16 [ g,8 as16 ~ ] as  [ bes8 c16 ] | % 19
+        r8 es8 [ d c ] | % 18
+        g'16 [ g,8 as16 ~ ] as [ bes8 c16 ] | % 19
         bes8 [ f' ] g [ d ] | % 20
         es16 [ d c8 ] r16 bes8 [ c16 ] | % 21
         d16 [ bes f d ] es [ f g as ] | % 22
@@ -77,15 +77,15 @@ viola = \relative g' {
         g8 r8 r16 fis16 [ g a ] | % 8
         bes16 ( [ a ) a ( g ) ] g ( [ fis ) fis ( g ) ] | % 9
         g8 r8 r8 c,8 | % 10
-        bes8 [ g'16 f ~ 
-		] f [ e8 d16 ] | % 11
+        bes8 [ g'16 f ~
+        ] f [ e8 d16 ] | % 11
         cis8 [ bes' ] a [ cis, ] | % 12
         r8 d32 [ cis d16 ~ ] d [ d8 d16 ] ~ | % 13
         d16 [ e32 d cis16 b ] cis [ e a8 ] | % 14
         r8 d, ~ d16 [ e32 f e d e16 ] | % 15
         d4 r | % 16
     }
-  
+
     \repeat volta 2 {
         r8 fis8 [ g a ] | % 17
         d,16 [ d'8 c16 ~ ] c [ bes8 a16 ] | % 18
@@ -144,11 +144,11 @@ cello = \relative g {
         c,8( [ b) ] r16 a16 [ b g ] | % 25
         c8( [ c') ] r8 c,8 ~ | % 26
         c16 [ d' es bes ] a [ bes c g ] | % 27
-        g8 [ ( fis16)  g ] a [ bes32 c d es c16 ] | % 28
+        g8 [ ( fis16) g ] a [ bes32 c d es c16 ] | % 28
         bes32 [ d c16 bes32 c a16 ] g32 [ a f16 es32 f d16 ] | % 29
-        c16 [ es32 d es16 fis, ] g8 r16 c16  | % 30
+        c16 [ es32 d es16 fis, ] g8 r16 c16 | % 30
         d8 r16 es16 c8 [ d ] | % 31
-        g16 [ d32 c bes c a16 ] g4 | % 32 
+        g16 [ d32 c bes c a16 ] g4 | % 32
     }
 }
 

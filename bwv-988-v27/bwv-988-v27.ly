@@ -21,7 +21,6 @@ violin = \relative a' {
     \set Staff.midiInstrument = "violin"
 
     \repeat volta 2 {
-
         R1*6/8 | % 1
         a8( [ b16 cis d e ] fis [ e d e fis8-.) ] | % 2
         g,8-.-- r8 r8 e'8-.-- r8 r8 | % 3
@@ -41,12 +40,12 @@ violin = \relative a' {
     }
 
     \repeat volta 2 {
-		a''8-> ( [ g16 fis e d ] c [ d e d c a') ] | % 17
+        a''8-> ( [ g16 fis e d ] c [ d e d c a') ] | % 17
         b,8-.-- r8 r8 g'8-.-- r8 r8 | % 18
         c16 [ d c b a g ] a [ b a g fis e ] | % 19
         dis8( [ e8 \turn fis8 ] b,4.) ~ | % 20
         b16 [ a b d c b ] c [ f c a f a ] | % 21
-        dis,16 [ e  fis  a  g fis ] g8 [ g8. \prallprall fis32 g32 ] | % 22
+        dis,16 [ e fis a g fis ] g8 [ g8. \prallprall fis32 g32 ] | % 22
         a16( [ b c b a8-.) ] a4. \turn ~| % 23
         a16 [ fis g a b c ] d [ c b a gis fis ] | % 24
         e16( [ gis a b c d ] e [ d c d e8-.) ] | % 25
@@ -82,7 +81,7 @@ viola = \relative g {
         a'16 [ b a g fis e ] d [ fis a c b a ] | % 12
         g16 [ a g fis e d ] cis [ e g b a g ] | % 13
         fis8( g8 \turn a8) ~ a8 g8 fis8 ~ | % 14
-        fis16 [ e  d  cis  d  b ] cis4  ~ \prallprall cis16 [ b32 cis32 ] | % 15
+        fis16 [ e d cis d b ] cis4 ~ \prallprall cis16 [ b32 cis32 ] | % 15
         d8-. [ fis,8-. a8-. ] d,4. % 16
     }
 
@@ -97,8 +96,8 @@ viola = \relative g {
         g16( [ a b a g8-.) ] gis4. \turn ~| % 24
         gis16 [ e fis gis a b ] c [ b a g fis e ] | % 25
         d16( [ fis g a b c ] d [ c b c d8-.) ] | % 26
-        g,8-.-- r8 r8 e'8-.-- r8 r8  | % 27
-        a,8 [ b16 c d e ] fis [ g fis e fis d ]  | % 28
+        g,8-.-- r8 r8 e'8-.-- r8 r8 | % 27
+        a,8 [ b16 c d e ] fis [ g fis e fis d ] | % 28
         b16 [ a g fis e d ] c4. ~ | % 29
         c16 [ b c d e fis ] g [ d b g a b ] | % 30
         e,16( [ fis g a b g ] a [ c fis8) ] r8 | % 31

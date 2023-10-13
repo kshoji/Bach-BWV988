@@ -25,7 +25,7 @@ violin = \relative d' {
         e4 d8 [ cis8 ] d2 ~ | % 2
         d4 cis8 [ b8 ] cis4 e4 | % 3
         a1 ~ | % 4
-        a4 g8 fis <d' g,>2  ~ | % 5
+        a4 g8 fis <d' g,>2 ~ | % 5
         <d g,>4 c8 [ b ] c4 e | % 6
         a,4 d2 c4 ~ | % 7
         c4 b8 [ a ] b2 | % 8
@@ -46,7 +46,7 @@ violin = \relative d' {
         e4 dis8 [ cis ] dis4 fis | % 20
         b4 b, b'2 ~ | % 21
         b4 a8 [ g ] a4 c | % 22
-        fis,4 g a2 ~  | % 23
+        fis,4 g a2 ~ | % 23
         a4 g8 [ fis ] g4 b | % 24
 
         e,1 | % 25
@@ -77,7 +77,7 @@ viola = \relative g' {
         g4 fis8 [ e ] fis4 a ~ | % 7
         a4 g8 [ fis ] g4 b | % 8
 
-        g4 g8 [ fis ]  g2 ~ | % 9
+        g4 g8 [ fis ] g2 ~ | % 9
         g4 fis8 [ e ] fis4 b | % 10
         d4 cis8 [ b8 ] cis4 e4 | % 11
         d4 cis8 [ b ] cis4 e | % 12
@@ -118,7 +118,7 @@ cello = \relative g {
         g1 | % 1
         fis1 | % 2
         e1 | % 3
-        d2. c4  | % 4
+        d2. c4 | % 4
         b1 | % 5
         c1 | % 6
         d1 | % 7

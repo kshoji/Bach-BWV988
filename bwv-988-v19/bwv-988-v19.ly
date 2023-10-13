@@ -86,7 +86,7 @@ viola = \relative b' {
         fis4 a8 | % 13
         d,8 [ g b ] | % 14
         cis8 [ a g ~ ] | % 15
-        g8 fis4  | % 16 
+        g8 fis4 | % 16
     }
 
     \repeat volta 2 {
@@ -216,7 +216,7 @@ volume = \relative c {
             \context Staff = "middle" { \clef C \global << \viola \\ \volume >> }
             \context Staff = "lower" { \clef bass \global << \cello \\ \volume >> }
         >>
-        \layout{  }
+        \layout { }
         \midi { \tempo 8 = 138 }
 
     }

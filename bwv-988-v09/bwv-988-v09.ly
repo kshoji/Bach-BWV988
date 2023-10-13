@@ -30,7 +30,7 @@ violin = \relative b' {
         g8 fis4 e8 fis8 [ g8 a8 g8 ] | % 7
         fis4 e4 d2 | % 8
     }
-  
+
     \repeat volta 2 {
         fis8 [ d8 e8 fis8 ] g8 [ d8 g8 a8 ] | % 9
         b8 [ e,8 ] a4 ~ a8 [ g16 fis16 ] g8 r8 | % 10
@@ -60,7 +60,7 @@ viola = \relative g {
         a8 [ b16 cis16 ] d4 ~ d8 [ cis16 b16 ] cis16 [ d16 e8 ]~ | % 7
         e8 d4 cis8 d2 | % 8
     }
-  
+
     \repeat volta 2 {
         r1 | % 9
         d8 [ b8 cis8 dis8 ] e8 [ b8 e8 fis8 ] | % 10
@@ -84,14 +84,14 @@ cello = \relative g, {
     \repeat volta 2 {
         g4 g'4 ~ g8 [ fis16 e16 ] fis8 [ d8 ] | % 1
         g8 [ a8 b8 c8 ] d4. dis8 | % 2
-        e4  r8 c,8 g8 [ d'8 ] g8 [ a16 b16 ] | % 3
+        e4 r8 c,8 g8 [ d'8 ] g8 [ a16 b16 ] | % 3
         c8 [ b8 a8 d8 ] g,2 ~ | % 4
         g8 g,4 fis8 e8 [ e'16 dis16 ] e4 ~ | % 5
         e8 e4 d8 c8 [ c'16 b16 ] c16 [ d16 e16 d16 ] | % 6
         cis16 [ a16 d16 cis16 ] b16 [ a16 b16 gis16 ] a16 [ b16 a16 g16 ] fis16 [ e16 d16 cis16 ] | % 7
-        d16 [ cis16 b16 a16 ] g16 [ e16 a8 ] d,8 [ fis16 a16 ] d4  % 8
+        d16 [ cis16 b16 a16 ] g16 [ e16 a8 ] d,8 [ fis16 a16 ] d4 % 8
     }
-  
+
     \repeat volta 2 {
         d8 d'4 c8 b16 [ a16 b16 c16 ] b16 [ a16 g16 fis16 ] | % 9
         g8 g'4 fis8 e16 [ dis16 e16 fis16 ] e16 [ d16 c16 b16 ] | % 10
@@ -144,8 +144,8 @@ volume = \relative c {
             \context Staff = "middle" { \clef C \key g \major \time 4/4 << \viola \\ \volume >> }
             \context Staff = "lower" { \clef "bass" \key g \major \time 4/4 << \cello \\ \volume >> }
         >>
-        \layout{ }
-        \midi{ }
+        \layout { }
+        \midi { }
     }
 }
 \book {
@@ -158,7 +158,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper" { \clef "treble" \key g \major \time 4/4 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -170,7 +170,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 4/4 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -181,7 +181,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef "bass" \key g \major \time 4/4 << \cello \\ \volume >> }
-        \layout{ }
+        \context Staff = "lower" { \clef "bass" \key g \major \time 4/4 << \cello \\ \volume >> }
+        \layout { }
     }
 }

@@ -34,10 +34,10 @@ violin = \relative b' {
         d''16 [ b' c, a' ] b, [ g' a, fis' ] g, [ e' fis, d' ] | % 9
         e,16 [ d' cis b ] cis [ e a8 ] a8 \downmordent r8 | % 10
         b,16 [ g' a, fis' ] g, [ e' fis, d' ] e, [ cis' d, b' ] | % 11
-        cis,16 [ b' a gis ] a [ cis e8 ] e4 \mordent ~  | % 12
+        cis,16 [ b' a gis ] a [ cis e8 ] e4 \mordent ~ | % 12
 
         e16-. [ d-. e-. cis-. ] d-. [ b-. c-. a-. ] b-. [ g-. a-. fis-. ] | % 13
-        g16-. [ e'-. fis,-. d'-. ] e,-. [ cis'-. \grace d32( cis16-.) ( b-. )] \grace cis32( b16-.) [ ( a-. ) b-.  g'-. ] | % 14
+        g16-. [ e'-. fis,-. d'-. ] e,-. [ cis'-. \grace d32( cis16-.) ( b-. )] \grace cis32( b16-.) [ ( a-. ) b-. g'-. ] | % 14
         g8.( [ fis32 e) ] fis16( [ d b g) ] a( [ fis g e') ] | % 15
         fis,16( [ e fis e ] fis [ a d cis ] d8-!) r8 | % 16
     }
@@ -56,7 +56,7 @@ violin = \relative b' {
         c16 [ a g! b ] a [ fis' g e ] fis [ d e c' ] | % 27
         c8 ~ [ c32 b a g ] fis16 [ g a fis ] \grace e8( d4) ~ | % 28
         d16 [ b c a ] b [ g' a, f' ] g, [ e' f, d' ] | % 29
-        e,8 r32 g32 [ a b ] c16 [ a b g ] a [ fis g e  ] | % 30
+        e,8 r32 g32 [ a b ] c16 [ a b g ] a [ fis g e ] | % 30
         fis16 [ e' d8 ~ ] d32 [ e fis g fis e d c ] b16 [ g'16 a,16 fis'16 ] | % 31
         g,16( [ fis g fis ] g [ b d fis ] g8-!) r8 | % 32
     }
@@ -213,7 +213,7 @@ volume = \relative c {
         \context StaffGroup <<
             \context Staff = "upper" { \clef treble \key g \major \time 3/4 << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
-            \context Staff = "lower"  { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
+            \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
         >>
         \layout { }
         \midi { }
@@ -252,7 +252,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
+        \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
         \layout { }
     }
 }

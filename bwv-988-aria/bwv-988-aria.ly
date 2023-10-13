@@ -42,7 +42,7 @@ violin = \relative c'' {
         a16( g fis e) d8-. a4 ~ a32 b32 c16
         b( a g fis) e8-. \appoggiatura d'16 cis4 ~ cis32 d e16
         d ( cis b a) g'8 b,4 cis8
-        \appoggiatura cis16 d8 ~[ d32 e32 d32 cis32] \appoggiatura cis8 d2 
+        \appoggiatura cis16 d8 ~[ d32 e32 d32 cis32] \appoggiatura cis8 d2
     }
 
     \repeat volta 2 {
@@ -51,7 +51,7 @@ violin = \relative c'' {
         \grace {s8}
 
         %17
-        a4 \mordent a4  ~\downprall a16[ a32( b32 c32 d32 e16)]
+        a4 \mordent a4 ~\downprall a16[ a32( b32 c32 d32 e16)]
         \appoggiatura e16 d8 \appoggiatura c16 b8 \appoggiatura a8 g4. g'8
         \appoggiatura fis16 e8. fis32 dis32 \appoggiatura dis8 e4. \mordent a32 b32 a32 g32
         a8. fis16 \appoggiatura e8 dis4. b8
@@ -104,7 +104,7 @@ violinExtended = \relative c'' {
         a16( g fis e) d8 a4 ~ a32 b32 c16
         b( a g fis) e8 d'16 cis8. ~ cis32 d e16
         d ( cis16 b a) g'8 b,4 cis8
-        \appoggiatura cis16 d8 ~[ d32 e d cis] cis8 d( d4) 
+        \appoggiatura cis16 d8 ~[ d32 e d cis] cis8 d( d4)
     }
 
     \repeat volta 2 {
@@ -163,7 +163,7 @@ viola = \relative c' {
         r4 a, d
         r b e
         fis e8. fis16 g4 ~
-        g fis2 
+        g fis2
     }
     \repeat volta 2 {
         % https://music.stackexchange.com/a/128794
@@ -194,7 +194,7 @@ viola = \relative c' {
         c4 r2
         r16 c, b a b2 \fermata
     }
-} 
+}
 
 violaExtended = \relative c' {
     \accidentalStyle modern-voice-cautionary
@@ -224,7 +224,7 @@ violaExtended = \relative c' {
         r4 a, d
         r b e
         fis e8. fis16 g4 ~
-        g fis2 
+        g fis2
     }
     \repeat volta 2 {
         %17
@@ -251,7 +251,7 @@ violaExtended = \relative c' {
         c4 r2
         r16 c, b a b2 \fermata
     }
-} 
+}
 
 cello = \relative c' {
     \accidentalStyle modern-voice-cautionary
@@ -384,7 +384,7 @@ volume = \relative c {
         s2. |
         s8. \< s16 \! s8. \> s16 \! s4 |
         s2. |
-        
+
         s4 s4 s4 \cresc |
         s2. |
         s2. \f |
@@ -430,7 +430,7 @@ volume = \relative c {
             \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
             \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
         >>
-        \layout{ }
+        \layout { }
         \midi { }
     }
 }
@@ -444,7 +444,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper1" { \clef treble \key g \major \time 3/4 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -456,7 +456,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 3/4 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -468,6 +468,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef bass \key g \major \time 3/4 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }

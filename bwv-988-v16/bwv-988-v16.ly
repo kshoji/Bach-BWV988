@@ -22,32 +22,32 @@ violin = \relative g' {
 
     \repeat volta 2 {
         r4 r32 g32 [ a b c d e fis ] g8. [ d16 b8. g16 ] | % 1
-        d'4. \mordent e8 c4 ~ \downprall 
+        d'4. \mordent e8 c4 ~ \downprall
         c8. [ \times 2/3 {b32 c d ] } | % 2
         g,8. [ g'32 fis32 ] g8. [ e16 ] \grace d8( cis8.) [ b'16 a8. g16 ] | % 3
         fis4. \prall g8 \grace g8( a2) ~ | % 4
-        a8. [ \times 2/3 { a32 g fis ] } 
-        g8. [ d16 ] \grace e8( f4. \mordent) g8 | % 5 
+        a8. [ \times 2/3 { a32 g fis ] }
+        g8. [ d16 ] \grace e8( f4. \mordent) g8 | % 5
         \grace f8(
-        e8.) [ \times 2/3 { d32 c b ] } 
+        e8.) [ \times 2/3 { d32 c b ] }
         c8. [ \times 2/3 { b32 a g ] } a8. [ a16] g'8. \mordent [ g16] | % 6
         <d, b' g'>4 \arpeggio ~ g'32 [ b a g fis e d c ] a'8. [ c,16 ] a'8. [ c,16 ] | % 7
         b4 ~ \downprall
-        b8. [ \times 2/3 { a32 g fis ] } 
+        b8. [ \times 2/3 { a32 g fis ] }
         g16-. [ d'-. e-. fis-. ] g-. [ fis-. g-. a-. ] | % 8
-        b8. [ \times 2/3 {  a32 g fis ] } 
-        g8. [ \times 2/3 {  fis32 e dis ] } e8. [ b16 cis8. \mordent d16 ] | % 9
-        \grace d8( 
-        cis8.) [ \times 2/3 { e32 fis g ] } a8. [ a16 ] a4 ~ 
+        b8. [ \times 2/3 { a32 g fis ] }
+        g8. [ \times 2/3 { fis32 e dis ] } e8. [ b16 cis8. \mordent d16 ] | % 9
+        \grace d8(
+        cis8.) [ \times 2/3 { e32 fis g ] } a8. [ a16 ] a4 ~
         a8. [ \times 2/3 { a32 g fis ] } | % 10
         g8. [ \times 2/3 { fis32 e dis ] } e8. [ b'16 ] d,4. \downprall cis16 [ b16 ] | % 11
         cis8. [ \times 2/3 { d32 cis d ] } d8. \prallprall [ cis32 d ] e4 ~ \> e32 [ d cis b a g fis e \! ] | % 12
-        d8. [ fis16 a8. \mordent b16 ] c4 ~ 
-        c8. [ \times 2/3 {  c32 b a ] } | % 13
-        b8. [ \times 2/3 {  cis32 d e ] }
+        d8. [ fis16 a8. \mordent b16 ] c4 ~
+        c8. [ \times 2/3 { c32 b a ] } | % 13
+        b8. [ \times 2/3 { cis32 d e ] }
         d8. \prall[ \times 2/3 { cis32 d e ] }
         a,8. [ \times 2/3 { e'32 fis g ]} a8. [ cis,16 ] | % 14
-        \after 4 \turn d4. e8 e4. \prallprall d8 |  % 15
+        \after 4 \turn d4. e8 e4. \prallprall d8 | % 15
     }
 
     \alternative {
@@ -103,20 +103,20 @@ viola = \relative c' {
     \set Staff.midiInstrument = "viola"
 
     \repeat volta 2 {
-        <g d' b'>4 r4 r4 r8 r16 b'16  | % 1
-        a4 r2.   | % 2
-        r1   | % 3
-        r1   | % 4
-        r1   | % 5
-        r1   | % 6
-        r1   | % 7
-        r1   | % 8
+        <g d' b'>4 r4 r4 r8 r16 b'16 | % 1
+        a4 r2. | % 2
+        r1 | % 3
+        r1 | % 4
+        r1 | % 5
+        r1 | % 6
+        r1 | % 7
+        r1 | % 8
 
-        r2. r8 r16 b  | % 9
-        a4 r4 dis8. fis16 b,4 ~   | % 10
-        b4 r b2   | % 11
-        a4 b cis r   | % 12
-        r4 r fis, r   | % 13
+        r2. r8 r16 b | % 9
+        a4 r4 dis8. fis16 b,4 ~ | % 10
+        b4 r b2 | % 11
+        a4 b cis r | % 12
+        r4 r fis, r | % 13
         r4 r8 r16 b16 cis4 r4 | % 14
         r2 cis | % 15
     }
@@ -155,20 +155,20 @@ viola = \relative c' {
         g4. ~ | % 37
         g8 fis8( [ g ] \turn | % 38
 
-        a8) r8 r8  | % 39
-        r4.   | % 40
+        a8) r8 r8 | % 39
+        r4. | % 40
 
-        r4.   | % 41
-        r4.   | % 42
+        r4. | % 41
+        r4. | % 42
         r16 g16 [ fis g a fis ] | % 43
         d4. ~ | % 44
-        d16 [ fis e g fis8 ]   | % 45
+        d16 [ fis e g fis8 ] | % 45
         b,8-. c-. a-. | % 46
     }
 
     \alternative {
-        { b4 r8|  % 47
-        r4. | } % 48 
+        { b4 r8| % 47
+        r4. | } % 48
         { \time 4/4 r1|} % 48
     }
     \bar "|."
@@ -184,33 +184,33 @@ cello = \relative d, {
     \repeat volta 2 {
         g4 r4 r4 r8 r16 g'16 | % 1
         fis4 ~ fis32 [ d e fis g a b c ] d8. [ a16 fis8. d16 ] | % 2
-        e4. g8 e4 ~ \downprall 
+        e4. g8 e4 ~ \downprall
         e8. [ \times 2/3 { d32 e fis ] } | % 3
         d8. [ c'32 b ] c8. [ a16 ] fis8. [ e'16 d8. c16 ] | % 4
-        b4. \downprall b8 
-        b8. [ \times 2/3 { c32  b a ] } 
+        b4. \downprall b8
+        b8. [ \times 2/3 { c32 b a ] }
         b8. [ g16 ] | % 5
-        c4 ~ \mordent 
+        c4 ~ \mordent
         c8. [ \times 2/3 { d32 c b ] }
         c8. [ \times 2/3 { b32 a g ] }
         a8. [ \times 2/3 { g32 fis e ] }| % 6
-        d2 ~ d16  [ c32 b a g fis e ] d16 [ fis a d ] | % 7
-        g,16-. [ d'-. e-. fis-. ] g-. [ fis-. g-. a-. ] b4 ~ \prallprall 
-        b8. [ \times 2/3 {  a32 g fis ] } | % 8
+        d2 ~ d16 [ c32 b a g fis e ] d16 [ fis a d ] | % 7
+        g,16-. [ d'-. e-. fis-. ] g-. [ fis-. g-. a-. ] b4 ~ \prallprall
+        b8. [ \times 2/3 { a32 g fis ] } | % 8
 
         g16-. [ b-. cis-. dis-.] e-. [ dis-. e-. fis-. ] g8. [ g,16 g'8. g16 ] | % 9
-        g4 ~ 
-        g8. [ \times 2/3 { g32  fis e ] }
-        fis8.-> [ \times 2/3 {  b,32  cis dis ] } e8. [ e16 ] | % 10
-        e4 ~ 
-        e8. [ \times 2/3 {  c32 b a ] } gis8. [ b16 e,8. gis16 ] | % 11
+        g4 ~
+        g8. [ \times 2/3 { g32 fis e ] }
+        fis8.-> [ \times 2/3 { b,32 cis dis ] } e8. [ e16 ] | % 10
+        e4 ~
+        e8. [ \times 2/3 { c32 b a ] } gis8. [ b16 e,8. gis16 ] | % 11
         a4 ~ a16 [ a,32 \< b cis d e fis ] g8. \! [ e16 ] cis8. [ a16 ] | % 12
-        fis'4 ~ 
-        fis8. [ \times 2/3 {  g32 fis e ] }
-        d8. [ \times 2/3 { c32 b a ] } 
+        fis'4 ~
+        fis8. [ \times 2/3 { g32 fis e ] }
+        d8. [ \times 2/3 { c32 b a ] }
         g8. [ \times 2/3 { d'32 e fis ] } | % 13
-        g8. \mordent [ g,16  g'8.  g16 ] g4 ~ 
-        g8. [ \times 2/3 {  g32 fis e ] } | % 14
+        g8. \mordent [ g,16 g'8. g16 ] g4 ~
+        g8. [ \times 2/3 { g32 fis e ] } | % 14
         fis16 ~ [ fis32 d e fis g a ] b8. [ g16 ] a4 a, | % 15
     }
 
@@ -223,15 +223,15 @@ cello = \relative d, {
         r4. % 17
         r4.
         r4.
-        r8 a'16( [ g fis e ]    | % 20
-        fis8-.) [ g-. a-. ]   | % 21
-        dis,16 [ fis e g fis a ]   | % 22
+        r8 a'16( [ g fis e ] | % 20
+        fis8-.) [ g-. a-. ] | % 21
+        dis,16 [ fis e g fis a ] | % 22
         g8 b'16( [a g fis ] | % 23
         g8-.) [ a-. b-. ] | % 24
 
         e,16 [ g fis a g b ] | % 25
         a8( [ b c) ] | % 26
-        fis,16 [ a  g b a c ] | % 27
+        fis,16 [ a g b a c ] | % 27
         b8( [ c d) ] | % 28
         g,16 [ b a c a d ]| % 29
         c8-. [ a-. b-. ] | % 30
@@ -244,13 +244,13 @@ cello = \relative d, {
 
         b8-.) [c-. d-.] | % 36
         g,16 [ b a c b d ] | % 37
-        c16 [b a g fis e ]  | % 38
+        c16 [b a g fis e ] | % 38
 
 
         fis8( [g \turn a) ] | % 39
         d,16 [ fis e g fis a ] | % 40
 
-        g8( [ a \turn  b) ] | % 41
+        g8( [ a \turn b) ] | % 41
         e,16 [ gis fis a gis b ] | % 42
         a16 [ e' a g fis e ] | % 43
         fis16 [ g fis e d c ] | % 44
@@ -385,7 +385,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower"  { \clef bass \key g \major \time 2/2 << \cello \\ \volume >> }
+        \context Staff = "lower" { \clef bass \key g \major \time 2/2 << \cello \\ \volume >> }
         \layout { }
     }
 }

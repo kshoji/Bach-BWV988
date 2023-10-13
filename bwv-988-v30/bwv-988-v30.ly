@@ -29,7 +29,7 @@ violin = \relative d' {
         g8 [ a b c ] d8 [ c16 b ] a8 r8 | % 2
         g8 a g f e d c b' | % 3
         d8 [ e d c ] b \prall [ a ] g4 | % 4
-        g8 [ a b c ] d [ c16 b a8 ] d  | % 5
+        g8 [ a b c ] d [ c16 b a8 ] d | % 5
         g8 [ fis e d ] cis \prall [ b16 cis a8 ] b16 cis | % 6
         d8 e fis d b d g fis | % 7
         a8 [ b a g ] fis [ e ] d % 8
@@ -45,7 +45,7 @@ violin = \relative d' {
         e16 [(d ) fis (e) ] g16 [(fis) a8 ] d,4. c16 [ d] | % 13
         e8 [ fis16 g] a8 [ g ] fis16 \prall [ e32 fis d8 ] r4 | % 14
         b'8 [ c d b ] c [ b a g ] | % 15
-        fis8 [ g a fis ] g4 g8  % 16
+        fis8 [ g a fis ] g4 g8 % 16
     }
 }
 
@@ -69,15 +69,15 @@ viola = \relative g {
     }
 
     \repeat volta 2 {
-		\partialPickup  fis8 | % Auftakt
-		d8 [ fis d fis ] g [ d d g ] | % 9
-		a8 b a g fis e dis r | % 10
-		g4 g fis8 [g fis e ] | % 11
-		dis8 [ e16 fis ] b,4 ~ b8 [ a16 b g8 ] a16 [ b ] | % 12
-		c8 [ d e fis ] g [ fis16 e d8 ] c16 b | % 13
-		c8. d16 e8 [ d16 e ] a8 [b c] d | % 14
-		b8 a16 b g8 r r e'16[ d c8] e | % 15
-		a,16 d c b c a d8 ~ d c16 d b8 % 16
+        \partialPickup fis8 | % Auftakt
+        d8 [ fis d fis ] g [ d d g ] | % 9
+        a8 b a g fis e dis r | % 10
+        g4 g fis8 [g fis e ] | % 11
+        dis8 [ e16 fis ] b,4 ~ b8 [ a16 b g8 ] a16 [ b ] | % 12
+        c8 [ d e fis ] g [ fis16 e d8 ] c16 b | % 13
+        c8. d16 e8 [ d16 e ] a8 [b c] d | % 14
+        b8 a16 b g8 r r e'16[ d c8] e | % 15
+        a,16 d c b c a d8 ~ d c16 d b8 % 16
     }
 }
 

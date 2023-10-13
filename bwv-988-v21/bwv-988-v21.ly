@@ -24,11 +24,11 @@ violin = \relative a' {
         r2 r16 a16 [ bes \< c ] d \! [ c bes a ] | % 1
         g8 [ d' g, c ~ ] c16 [ fis, g a ] bes [ a g fis ] | % 2
         g8 r8 r8 g8 as [ g \< as a \! ] | % 3
-        bes16 [ c d c ] bes [ a g fis!] es'8 r r c8 ~  | % 4
+        bes16 [ c d c ] bes [ a g fis!] es'8 r r c8 ~ | % 4
         c16 [ c bes a ] bes [ c d e ] f!8 [ e ] f16 [ g a8 ~ ] | % 5
         a16 [ g f a ] g [ f e d ] cis8. \prall [ b16 ] cis [ d e8 ] | % 6
         d8 r8 r8 d8 ees! [ d8 es e ] | % 7
-        f8 [ g a g ~ ] g8 [ fis16 e ] d [ cis d8 ]	| % 8
+        f8 [ g a g ~ ] g8 [ fis16 e ] d [ cis d8 ] | % 8
     }
 
     \repeat volta 2 {
@@ -38,7 +38,7 @@ violin = \relative a' {
         bes,16 [ c d bes ] es8 [ as, ~ ] as [ g16 f ] g8 [ es'8 ~ ] | % 12
         es8 [ d16 c ] d8 r8 r16 e,16 [ f! g ] f [ e d c ] | % 13
         c'16 [ bes c8 ] fis,8 r8 r8 d'16 [ c ] bes [ a g f ] | % 14
-        es8  r8 r8 c'8 ~ c [ bes!] a [ bes16 c ] | % 15
+        es8 r8 r8 c'8 ~ c [ bes!] a [ bes16 c ] | % 15
         d8 [ f,! ] es [ c' ~ ] c16 [ bes32 a g a fis16 ] g4 | % 16
     }
 }
@@ -52,11 +52,11 @@ viola = \relative bes {
 
     \repeat volta 2 {
         r16 bes16 [ c d ] es [ d c bes ] a8 [ es' a, d ~ ] | % 1
-        d16 [ g, a bes ] c [ bes a g ] a8 r r a8  | % 2
+        d16 [ g, a bes ] c [ bes a g ] a8 r r a8 | % 2
         bes8 [ a bes b ] c16 [ d es d ] c [ bes a g ] | % 3
-        fis'8 r r d8 ~  d16 [ d c  bes ] c [ d e fis ] | % 4
+        fis'8 r r d8 ~ d16 [ d c bes ] c [ d e fis ] | % 4
         g8 [ fis ] g16 [ a bes8~ ] bes16 [ a g bes ] a [ g f e ] | % 5
-        d8. \prall [ cis16 ] d [ e f8 ] e  r8 r8 e8 | % 6
+        d8. \prall [ cis16 ] d [ e f8 ] e r8 r8 e8 | % 6
         f8 [ e f fis ] g [ a bes a ~ ] | % 7
         a8 [ g16 f ] e [ d e8 ] d4 r4 | % 8
     }
@@ -65,9 +65,9 @@ viola = \relative bes {
         r16 bes'16 [ a \> g ] fis [ g \! a fis ] d8 [ e16 f ] g8 [ c, ] | % 9
         r16 g'16 [ f es! ] d [ f es g ] f8 g as4 ~ | % 10
         as16 [ g as bes ] es, [ d es g ] c, [ d es c ] f8 [ bes, ~ ] | % 11
-        bes8 [ as16 g ] as8  [ f'8 ~ ] f [ es16 d ] es8 r8 | % 12
+        bes8 [ as16 g ] as8 [ f'8 ~ ] f [ es16 d ] es8 r8 | % 12
         r16 fis,16 [ g a ] g [ fis e d ] d' [ c d8 ] g, r | % 13
-        r8 es'!16 [ d ] c [ bes a g ] fis8  r8 r8 d'8 ~ | % 14
+        r8 es'!16 [ d ] c [ bes a g ] fis8 r8 r8 d'8 ~ | % 14
         d8 [ c ] b [ c16 d ] es8 [ g,] fis[ d' ~ ] | % 15
         d16 [ c32 bes a bes g16 ] as [ g8 fis16 ] g4 r4 | % 16
     }
@@ -90,11 +90,11 @@ cello = \relative g, {
         d16 [ f, g a ] d, [ c' bes a ] g [ bes, c d ] g, [ g'8 cis,16 ] | % 7
         d16 [ a' d8 ~ ] d8. [ cis16 ] d [ bes a g ] fis [ a fis d ] | % 8
     }
-  
+
     \repeat volta 2 {
         d8 d'4 c8 b bes4 a!16 [ g ] | % 9
         a8 as4 g8 d [ es f bes, ] | % 10
-        es8  r8 r8 es8  as4. g16 [ f ] | % 11
+        es8 r8 r8 es8 as4. g16 [ f ] | % 11
         g4 ~ g16 [ f es d ] es [ g, as bes ] es, [ g a b ] | % 12
         c4 r8 c8 bes!4 r8 bes8 | % 13
         a16 [ g a bes ] a [ g fis e ] d [ c' d es! ] d [ c bes a ] | % 14

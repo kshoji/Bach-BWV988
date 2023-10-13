@@ -250,8 +250,8 @@ volume = \relative c {
             \context Staff = "lower" { \clef bass \key g \major \time 2/4 << \cello \\ \volume >> }
         >>
 
-        \midi  { }
-        \layout  { }
+        \midi { }
+        \layout { }
     }
 }
 \book {
@@ -264,7 +264,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "upper1" { \clef treble \key g \major \time 2/4 << \violin \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -276,7 +276,7 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "middle" { \clef C \key g \major \time 2/4 << \viola \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
     \pageBreak
     \score {
@@ -288,6 +288,6 @@ volume = \relative c {
             opus = "BWV 988"
         }
         \context Staff = "lower" { \clef bass \key g \major \time 2/4 << \cello \\ \volume >> }
-        \layout{ }
+        \layout { }
     }
 }
