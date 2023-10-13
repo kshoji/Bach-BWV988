@@ -18,6 +18,7 @@ violin = \relative g' {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "violin"
 
     \repeat volta 2 {
         r4 r32 g32 [ a b c d e fis ] g8. [ d16 b8. g16 ] | % 1
@@ -99,6 +100,7 @@ viola = \relative c' {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "viola"
 
     \repeat volta 2 {
         <g d' b'>4 r4 r4 r8 r16 b'16  | % 1
@@ -177,6 +179,7 @@ cello = \relative d, {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "cello"
 
     \repeat volta 2 {
         g4 r4 r4 r8 r16 g'16 | % 1

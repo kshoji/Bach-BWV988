@@ -84,6 +84,7 @@ violin = \relative g' {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "violin"
 
     \repeat volta 2 {
         \voiceOne
@@ -229,6 +230,7 @@ viola = \relative b {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "viola"
 
     \repeat volta 2 {
         \scaleDurations #'(4 . 6) {
@@ -376,6 +378,7 @@ cello = \relative b {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
     \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
+    \set Staff.midiInstrument = "cello"
 
     \repeat volta 2 {
         {
