@@ -354,7 +354,7 @@ celloP = \relative b {
 
         \set Staff.timeSignatureFraction = 18/16
 
-        \override TupletNumber.text = ##f
+        \omit TupletNumber
         \override TupletBracket.bracket-visibility = ##f
         \tuplet 6/4 {r16 \! e16 [ fis \> g  a b ] } | % 24
 

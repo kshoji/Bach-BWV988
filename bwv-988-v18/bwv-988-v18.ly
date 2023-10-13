@@ -215,7 +215,7 @@ volume = \relative c {
         \context StaffGroup <<
             \context Staff = "upper" { \clef treble << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C << \viola \\ \volume >> }
-            \context Staff = "lower" { << \bass \\ \volume >> }
+            \context Staff = "lower" { << \cello \\ \volume >> }
         >>
         \midi { \tempo 2 = 96 }
         \layout { }
@@ -254,7 +254,7 @@ volume = \relative c {
             composer = "J.S. Bach"
             opus = "BWV 988"
         }
-        \context Staff = "lower" { << \bass \\ \volume >> }
+        \context Staff = "lower" { << \cello \\ \volume >> }
         \layout { }
     }
 }

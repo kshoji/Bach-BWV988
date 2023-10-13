@@ -108,7 +108,7 @@ viola = \relative b {
     }
 }
 
-bass = \relative g, {
+cello = \relative g, {
     \set Score.alternativeNumberingStyle = #'numbers
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
