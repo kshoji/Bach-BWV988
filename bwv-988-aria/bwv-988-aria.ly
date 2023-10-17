@@ -76,64 +76,6 @@ violin = \relative c'' {
     }
 }
 
-violinExtended = \relative c'' {
-    \accidentalStyle modern-voice-cautionary
-    \override Rest.staff-position = #0
-    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
-
-    \repeat volta 2 {
-        %1
-        g'4 g4( \appoggiatura a16 \appoggiatura g a8.) b16
-        a8 g16 fis e16 d4..
-        \appoggiatura g,16 \appoggiatura fis g4 \appoggiatura a16 \appoggiatura g \appoggiatura fis \appoggiatura g \appoggiatura a g4.\trill fis16 g16
-        a32[( g fis16) g32( fis e16)] e8 d4.
-
-        %5
-        d'4 d( \appoggiatura e16 \appoggiatura d e8.) f16
-        e8 d16 c b a( a4) \appoggiatura g'16 \appoggiatura fis \appoggiatura e fis8
-        g32[( fis16.) a32( g16.)] fis32[( e16.) d32( c16.)] \appoggiatura c8 a'8. c,16
-        b32[( g16.) fis8] \appoggiatura fis8 \appoggiatura g16 \appoggiatura fis g2
-
-        %9
-        b4 b( \appoggiatura cis16 \appoggiatura b cis8.) d16
-        d cis b a d2 \stemUp
-        <g,, e' b' g'>4\arpeggio \appoggiatura a''16 \appoggiatura g \appoggiatura fis \appoggiatura g \appoggiatura a g4.\trill fis16 g16
-        g8 fis16 e \appoggiatura d16 cis4.\trill e8
-
-        %13
-        a16( g fis e) d8 a4 ~ a32 b32 c16
-        b( a g fis) e8 d'16 cis8. ~ cis32 d e16
-        d ( cis16 b a) g'8 b,4 cis8
-        \appoggiatura cis16 d8 ~[ d32 e d cis] cis8 d( d4)
-    }
-
-    \repeat volta 2 {
-        %17
-        \appoggiatura a16 \appoggiatura g a4 \appoggiatura b16 \appoggiatura a \appoggiatura g \appoggiatura a \appoggiatura b a4 ~\trill a16[ a32( b32 c32 d32 e16)]
-        e16 d c b a8 g4 g'8
-        fis16 e8 fis32 dis \appoggiatura dis8 \appoggiatura e16 \appoggiatura d e4. a32 b a g
-        a8. fis16 e8 dis4 b8
-
-        %21
-        \appoggiatura e16 \appoggiatura fis g8. fis16 fis8 e8 ~ e16[ b16 c32( b32 a32 b32)]
-        g'32[( e16.) fis32( dis16.)] dis8 e ~ e16 g, fis e
-        fis8. e'16 e dis \appoggiatura fis \appoggiatura g a8 g fis
-        fis16 e8 fis32 dis dis8 e4.
-
-        %25
-        e8 d16 c b16 a( a4) b16[ c16]
-        d32[( c32 b16) c32( b a16)] a8 g4 a16 b
-        c d c b c a e a c4 ~
-        c16 d c b c a fis a c e d c
-
-        %29
-        b c b a b g d g b g c d
-        e f e d e c g c e c fis g
-        a c, b a b c d g, b a g fis
-        g4 ~ g16 d g fis fis8 g\fermata
-    }
-}
-
 viola = \relative c' {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
@@ -197,63 +139,6 @@ viola = \relative c' {
     }
 }
 
-violaExtended = \relative c' {
-    \accidentalStyle modern-voice-cautionary
-    \override Rest.staff-position = #0
-    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
-
-    \repeat volta 2 {
-        %1
-        r4 b d
-        r a d
-        r g, cis
-        r fis, a
-
-        %5
-        r d, g
-        r e d'
-        r8 c ~ c[ b16 a] g fis e fis
-        g8 a b2
-
-        %9
-        r4 b e
-        a, a'2
-        r8 b, e4. d8
-        cis d e2
-
-        %13
-        r4 a, d
-        r b e
-        fis e8. fis16 g4 ~
-        g fis2
-    }
-    \repeat volta 2 {
-        %17
-        r8 e8 \appoggiatura fis16 \appoggiatura e fis2
-        r8 c8 d2
-        r8 e8 g4 \appoggiatura fis16 \appoggiatura g \appoggiatura fis \appoggiatura g fis8 e
-        dis e fis2
-
-        %21
-        r8 a, \appoggiatura g16 \appoggiatura a \appoggiatura g \appoggiatura a g8 fis8 g4
-        r8 a \appoggiatura g16 \appoggiatura a \appoggiatura g \appoggiatura a g8 fis g b
-        fis'4. c'8 b a ~
-        a4 g2
-
-        %25
-        r4 e, a ~
-        a8 fis e16[ d e fis] g[ fis g8] ~
-        g[ e] a e' ~ e16 b' a g
-        fis4 r8 fis4.
-
-        %29
-        g8 r r d8. g ~
-        g4 r8 g8. c~
-        c4 r2
-        r16 c, b a b2 \fermata
-    }
-}
-
 cello = \relative c' {
     \accidentalStyle modern-voice-cautionary
     \override Rest.staff-position = #0
@@ -291,63 +176,6 @@ cello = \relative c' {
         % workaround for issue 34 https://sourceforge.net/p/testlilyissues/issues/34/
         \grace {s8}
 
-        %17
-        d'2 c4
-        b4. a8 b4
-        c4. b8 a4
-        b4. a8 g fis
-
-        %21
-        e2 d4
-        c2 b4
-        a8 c b a b4
-        e8 b e, b' e d
-
-        %25
-        c2.
-        b2.
-        a4. g8 fis e
-        d a' d c b a
-
-        %29
-        g d' g f e d
-        c g' c b a g
-        fis d g b d d,
-        g4. d8 g,4 \fermata
-    }
-}
-
-celloExtended = \relative c' {
-    \accidentalStyle modern-voice-cautionary
-    \override Rest.staff-position = #0
-    \dotsNeutral \dynamicNeutral \phrasingSlurNeutral \slurNeutral \stemNeutral \textSpannerNeutral \tieNeutral \tupletNeutral
-
-    \repeat volta 2 {
-        %1
-        g2.
-        fis2.
-        e2.
-        d2 ~ d8 c
-
-        %5
-        b2.
-        c2 ~ c8 d
-        e c d2
-        g,4. d'8[ \appoggiatura e16 \appoggiatura d e8. fis16]
-
-        %9
-        g2. ~
-        g4 \appoggiatura fis16 \appoggiatura g \appoggiatura fis \appoggiatura g fis8 e fis b
-        e,4. e8 fis g
-        a4. b8 a g
-
-        %13
-        fis2.
-        g2.
-        a2.
-        d,4. a'8 d,4
-    }
-    \repeat volta 2 {
         %17
         d'2 c4
         b4. a8 b4
