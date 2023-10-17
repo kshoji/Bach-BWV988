@@ -5,7 +5,7 @@
 \paper {
     ragged-bottom = ##t
     print-page-number = ##f
-    print-all-headers = ##t
+    print-all-headers = ##f
     tagline = ##f
     indent = #0
     page-breaking = #ly:optimal-breaking
@@ -41,7 +41,7 @@ violin = \relative c''' {
         d4 g cis,8 d e4 ~
         e2 d
     }
-
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         r2 a'2 ~
         a2 g ~
@@ -90,7 +90,7 @@ viola = \relative c'' {
         e,8 fis g2.
         fis1
     }
-
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         c'1
         b2. c8 d
@@ -140,7 +140,7 @@ cello = \relative c' {
         g4 e a a
         d, a' d2
     }
-
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         r4 d8 e fis4 d
         g4 g, g' a8 b
@@ -213,8 +213,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 18" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \keepWithTag #'full
         \context StaffGroup <<
             \context Staff = "upper" { \clef treble << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C << \viola \\ \volume >> }
@@ -231,8 +231,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 18" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "upper" { \clef treble << \violin \\ \volume >> }
         \layout { }
     }
@@ -243,8 +243,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 18" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "middle" { \clef C << \viola \\ \volume >> }
         \layout { }
     }
@@ -255,8 +255,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 18" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "lower" { << \cello \\ \volume >> }
         \layout { }
     }

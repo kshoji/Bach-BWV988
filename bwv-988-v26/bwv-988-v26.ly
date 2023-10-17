@@ -5,7 +5,7 @@
 \paper {
     ragged-bottom = ##t
     print-page-number = ##f
-    print-all-headers = ##t
+    print-all-headers = ##f
     tagline = ##f
     indent = #0
     page-breaking = #ly:optimal-breaking
@@ -479,7 +479,7 @@ volume = \relative c {
         s2.
         s2.
     }
-    \break
+    \pageBreak
     {
         s2. \p
         s2 s16 s8. \cresc
@@ -491,6 +491,8 @@ volume = \relative c {
             s2 s4 \dim
             s2 s8 \< s8 \>
         }
+
+        \pageBreak
 
         s2 \p s4 \cresc
         s2.
@@ -512,8 +514,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 26" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \keepWithTag #'full
         \context StaffGroup <<
             \context Staff = "upper" { \clef "treble" \key g \major << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C \key g \major << \viola \\ \volume >> }
@@ -530,8 +532,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 26" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "upper" { \clef "treble" \key g \major \violinP }
         \layout { }
     }
@@ -542,8 +544,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 26" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "middle" { \clef C \key g \major \violaP }
         \layout { }
     }
@@ -554,8 +556,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 26" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "lower" { \clef "bass" \key g \major \celloP }
         \layout { }
     }

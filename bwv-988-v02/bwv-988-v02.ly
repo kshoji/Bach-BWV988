@@ -5,7 +5,7 @@
 \paper {
     ragged-bottom = ##t
     print-page-number = ##f
-    print-all-headers = ##t
+    print-all-headers = ##f
     tagline = ##f
     indent = #0
     page-breaking = #ly:optimal-breaking
@@ -43,7 +43,7 @@ violin = \relative c''' {
     }
     %16-20
     \alternative { { d8 r8 r4 } { d4 r4 } }
-
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         a'4 a'4-> ~
         a16 g16 fis16 a16 g16 fis16 e16 dis16
@@ -101,6 +101,7 @@ viola = \relative c'' {
     }
     %16-20
     \alternative { { d8 r8 r4 } { d4 r4 } }
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         r16 fis16[ e16 g16] fis16 e16 d16 cis16
         d4 r8 b'8
@@ -162,6 +163,7 @@ cello = \relative c' {
     }
     %16-20
     \alternative { { d8-.[ d'16 c!16] d16 c16 b16 a16 } { d,8 a8 d,4 } }
+    \tag #'full { \pageBreak }
     \repeat volta 2 {
         d''8[( cis8 d8 a8])
         b8[( a8 b8 g8]
@@ -241,9 +243,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 2" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
-
+        \keepWithTag #'full
         \context StaffGroup <<
             \context Staff = "upper" { \clef treble \key g \major \time 2/4 << \violin \\ \volume >> }
             \context Staff = "middle" { \clef C \key g \major \time 2/4 << \viola \\ \volume >> }
@@ -261,8 +262,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 2" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "upper1" { \clef treble \key g \major \time 2/4 << \violin \\ \volume >> }
         \layout { }
     }
@@ -273,8 +274,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 2" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "middle" { \clef C \key g \major \time 2/4 << \viola \\ \volume >> }
         \layout { }
     }
@@ -285,8 +286,8 @@ volume = \relative c {
             subtitle = "Goldberg Variations"
             piece = \markup { \fontsize #3 \bold "Variation 2" }
             composer = "J.S. Bach"
-            opus = "BWV 988"
         }
+        \removeWithTag #'full
         \context Staff = "lower" { \clef bass \key g \major \time 2/4 << \cello \\ \volume >> }
         \layout { }
     }
