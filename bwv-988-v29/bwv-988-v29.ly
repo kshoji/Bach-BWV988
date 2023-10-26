@@ -32,7 +32,7 @@ violin = \relative a' {
         <b, g'>8 r16 g' fis g fis g fis g d f % 5
         r8. e16 d e d e d e c e % 6
         r8. d16 cis d cis d cis d a c % 7
-        <d b>16 r16 r8 \tuplet 3/2 { r16 a16 [ b ] }
+        b16 r16 r8 \tuplet 3/2 { r16 a16 [ b ] }
         \tuplet 3/2 { c16 [ b a ] }
         \tuplet 3/2 { b16 [ a g ] }
         \tuplet 3/2 { e'16 [ d c ] } | % 8
@@ -139,7 +139,7 @@ viola = \relative c' {
         <d g,>8 r16 d c d c d c d b d
         r8. c16 b c b c b c a c
         r8. a16 g a g a g a fis a
-        <g d'>16 r r8 r4 r
+        g16 r r8 r4 r
 
         r2. % 9
         r2. % 10

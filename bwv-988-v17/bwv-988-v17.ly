@@ -202,8 +202,10 @@ volume = \relative c {
 }
 
 \book {
-    \score {
+    \paper {
         page-count = #2
+    }
+    \score {
         \header {
             title = "Aria with 30 Variations"
             subtitle = "Goldberg Variations"

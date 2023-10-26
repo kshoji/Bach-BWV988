@@ -46,7 +46,7 @@ violin = \relative d'' {
         {cis8\( [ d\) ] r4 r4 }
         {cis8\( [ d\) ] r4 r4 }
     }
-    \tag #'full { \pageBreak }
+    \pageBreak
     \repeat volta 2 {
         r16 a'16 [ \appoggiatura bes16 a32( gis a16) ] es! [ d ~ d32 e fis g ] a [ c, es8 d16 ~ ] | % 17
         d16 [ f \appoggiatura g16 f32( es f16) ] as, [ g ~ g32 a b c ] d [ f, as8 g16 ~ ] | % 18
@@ -62,7 +62,7 @@ violin = \relative d'' {
         cis16 [ (d) es, (d) ] r32 e32 [ fis g a bes c d ] es! [ d g16 ~ g32 fis a16 ~ ] | % 28
         a16 [ d, \appoggiatura es16 d32( cis d16) ] d'8-> ~ [ d32 c! bes a ] g [ d' f,16 ~ f32 es d c ] | % 29
         d32 [ as' g f es d c b ] c [ f es d c bes a! g ] a [ d c bes a g fis e ] | % 30
-        fis32 [ bes a g fis e d cis ] d [ g fis e d c bes a ] bes [ es d c bes a g fis ] | % 31
+        fis32 [ bes' a g fis e d cis ] d [ g fis e d c bes a ] bes [ es d c bes a g fis ] | % 31
     }
 
     \alternative {
