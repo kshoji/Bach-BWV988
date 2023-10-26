@@ -233,7 +233,8 @@ volume = \relative c {
         \context Staff = "upper" { \clef treble \global << \violin \\ \volume >> }
         \layout { }
     }
-    \pageBreak
+}
+\book {
     \score {
         \header {
             title = "Aria with 30 Variations"
@@ -245,7 +246,8 @@ volume = \relative c {
         \context Staff = "middle" { \clef C \global << \viola \\ \volume >> }
         \layout { }
     }
-    \pageBreak
+}
+\book {
     \score {
         \header {
             title = "Aria with 30 Variations"

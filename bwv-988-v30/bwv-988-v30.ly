@@ -180,7 +180,8 @@ volume = \relative c {
         }
         \layout { }
     }
-    \pageBreak
+}
+\book {
     \score {
         \header {
             title = "Aria with 30 Variations"
@@ -196,7 +197,8 @@ volume = \relative c {
         }
         \layout { }
     }
-    \pageBreak
+}
+\book {
     \score {
         \header {
             title = "Aria with 30 Variations"
